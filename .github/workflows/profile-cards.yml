@@ -7,8 +7,6 @@ on:
       - '.github/workflows/profile-cards.yml'
       - 'scripts/**'
       - 'tests/**'
-  schedule:
-    - cron: '23 9 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -30,7 +28,7 @@ jobs:
         run: python3 -m unittest discover -s tests -v
 
   refresh:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
     needs: validate
     runs-on: ubuntu-24.04
     timeout-minutes: 10
