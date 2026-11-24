@@ -81,7 +81,7 @@ Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação 
   <img src="assets/github-stats.pt-BR.svg" width="100%" alt="Estatísticas agregadas do GitHub e principais linguagens de projetos públicos e privados" />
 </picture>
 
-<sub>Os cartões apresentam dados de 24/11/2026; veja a documentação de atualização. Estatísticas agregadas de projetos próprios ativos, públicos e privados acessíveis; forks de terceiros, arquivados e o repositório de perfil são excluídos da contagem e das linguagens. PRs e issues de minha autoria nos repositórios da conta, conforme resultados acessíveis da busca GitHub. Estrelas e forks recebidos: somente projetos públicos próprios. Nenhum nome ou link privado é publicado.</sub>
+<sub>Os cartões apresentam um retrato datado; veja a documentação de atualização. Estatísticas agregadas de projetos próprios ativos, públicos e privados acessíveis; forks de terceiros, arquivados e o repositório de perfil são excluídos da contagem e das linguagens. PRs e issues de minha autoria nos repositórios da conta, conforme resultados acessíveis da busca GitHub. Estrelas e forks recebidos: somente projetos públicos próprios. Nenhum nome ou link privado é publicado.</sub>
 
 [Metodologia e atualização](docs/PROFILE_ANALYTICS.md)
 
