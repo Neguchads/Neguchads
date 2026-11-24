@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the public NAVI bundle with reviewed, pinned upstream revisions."""
 import argparse,json,pathlib,re,subprocess,tempfile,os
+from core_status import fetch_core_status
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def run(*args,**kw): subprocess.run(args,check=True,**kw)
 def main():
@@ -34,6 +35,9 @@ def main():
             except (subprocess.SubprocessError,OSError,ValueError,KeyError):
                 print("::warning::Graphify scan unavailable; no AST metrics fabricated.")
         run(*cmd)
+        public_data=json.loads(snapshot.read_text(encoding="utf-8"))
+        public_data["core_status"]=fetch_core_status()
+        snapshot.write_text(json.dumps(public_data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         run("node",str(t/"github-homepage/scripts/build-universe.mjs"),str(snapshot),str(t/"navyv-abyss"),str(ROOT),str(out))
         run("node","--check",str(t/"github-homepage/docs/universe/universe.js"))
         import xml.etree.ElementTree as ET
