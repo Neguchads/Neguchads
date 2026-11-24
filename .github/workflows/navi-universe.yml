@@ -6,12 +6,16 @@ on:
   pull_request:
     paths:
       - 'scripts/build_universe.py'
+      - 'scripts/publish_universe.py'
+      - 'tests/test_publish_universe.py'
       - 'docs/universe-pins.json'
       - '.github/workflows/navi-universe.yml'
   push:
     branches: [main]
     paths:
       - 'scripts/build_universe.py'
+      - 'scripts/publish_universe.py'
+      - 'tests/test_publish_universe.py'
       - 'docs/universe-pins.json'
       - '.github/workflows/navi-universe.yml'
 permissions:
@@ -27,9 +31,11 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+          ref: ${{ github.ref == 'refs/heads/main' && 'main' || github.sha }}
       - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b
         with:
           python-version: '3.12'
+          enable-cache: false
       - name: Refresh featured cards and build public bundle
         env:
           GH_TOKEN: ${{ github.token }}
@@ -38,12 +44,13 @@ jobs:
           python3 scripts/refresh_public_cards.py
           python3 scripts/build_universe.py --out /tmp/navi-universe --scan
           python3 -m unittest discover -s tests -v
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: navi-universe
           path: /tmp/navi-universe
           if-no-files-found: error
           retention-days: 7
+          overwrite: true
   publish:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
@@ -55,7 +62,9 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - uses: actions/download-artifact@v4
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: navi-universe
           path: /tmp/navi-universe
@@ -63,24 +72,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          set -eu
-          mkdir -p docs/universe
-          rm -rf docs/universe/assets
-          cp -R /tmp/navi-universe/. docs/universe/
-          cp docs/universe/universe.en.svg assets/universe.en.svg
-          cp docs/universe/universe.pt-BR.svg assets/universe.pt-BR.svg
-          cp docs/universe/assets/projects/*.svg assets/projects/
-          git add -- docs/universe assets/universe.en.svg assets/universe.pt-BR.svg assets/projects
-          if git diff --cached --quiet; then exit 0; fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m "docs: publish daily NAVI Universe snapshot"
           gh auth setup-git
-          git push origin HEAD:main
+          python3 scripts/publish_universe.py /tmp/navi-universe
   pages:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.NAVI_ENABLE_PAGES == 'true'
     needs: publish
     runs-on: ubuntu-24.04
+    timeout-minutes: 20
     permissions:
       pages: write
       id-token: write
@@ -89,12 +87,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: navi-universe
           path: site
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site
-      - uses: actions/deploy-pages@v4
+          name: github-pages-${{ github.run_attempt }}
+      - uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
         id: deploy
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
+          timeout: 600000
+          error_count: 15

@@ -7,3 +7,7 @@ The 3D dashboard projects XYZ coordinates onto Canvas; the original WebGPU Abyss
 Metrics cover publicly visible owned repositories; aggregate originals exclude forks, archived repos and profile. Daily history begins at first successful run; no backfilled numbers. Structural Graphify scan is attempted for the public profile; failures are explicitly unavailable and do not prevent analytics publication. Raw graphs and private data are never published. Existing private-inclusive aggregate cards are historical, separate from this public dataset.
 
 Publication uses a separate write-permission job; the build job has read permission only. A failed build leaves the previous snapshot intact. Check the Actions run for evidence. The original six featured cards are refreshed in the same build.
+
+## Recovery and publication safety
+
+NAVI Universe daily is the single writer for public cards and generated dashboard files. Profile cards remains a validation-only workflow. Main builds use the current main checkout, and publication fetches main before each bounded non-force push. A stale snapshot or changed build input causes a clear failure rather than overwriting newer data. For recovery, launch a fresh Run workflow on main; do not rerun executions created before the workflow fix. Pages artifacts have per-attempt names to avoid immutable-artifact collisions. GitHub Pages service errors may still need a fresh deployment.
