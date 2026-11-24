@@ -4,8 +4,10 @@
 
 <p align="center"><strong>Game engineering · Artificial intelligence · Developer tooling</strong></p>
 <p align="center">
-  <a href="#featured-projects">Projects</a> · <a href="#technology">Technology</a> · <a href="#engineering-principles">Engineering</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositories</a> · <a href="README.md">Português</a>
+  <a href="#featured-projects">Projects</a> · <a href="#technology">Technology</a> · <a href="#engineering-principles">Engineering</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositories</a> · <a href="#github-analytics">GitHub Analytics</a>
 </p>
+<p align="center"><a href="README.pt-BR.md"><img src="assets/language-pt.svg" alt="Leia em português brasileiro" height="32" /></a></p>
+
 
 I develop tools, applications and experimental static game recompilation projects. My focus is on turning technical problems into reproducible solutions through clear documentation, automation and verifiable tests.
 
@@ -36,6 +38,11 @@ I develop tools, applications and experimental static game recompilation project
 
 ## Technology
 
+<img src="assets/stack.en.svg" width="100%" alt="Technology stack: native engineering, web applications, games, AI, automation, quality and delivery" />
+
+<details>
+<summary>Technology list (text)</summary>
+
 | Area | Stack |
 | :--- | :--- |
 | Native engineering | C · C++ · Python · CMake · Ninja · LLVM/Clang |
@@ -43,6 +50,15 @@ I develop tools, applications and experimental static game recompilation project
 | Games and graphics | SDL3 · Dear ImGui · Direct3D 12 · Vulkan |
 | AI and automation | Codex · Ollama · ComfyUI · PowerShell |
 | Quality and delivery | Git · GitHub Actions · CodeQL · Playwright · Vitest · Hypothesis |
+
+</details>
+
+## GitHub Analytics
+
+<img src="assets/github-stats.en.svg" width="100%" alt="Aggregate GitHub statistics and top languages of public and private projects" />
+
+<sub>Aggregated active original projects, including accessible public and private repositories; third-party forks, archived repositories and this profile repository are excluded from project and language totals. Authored PRs and issues in account-owned repositories reflect accessible GitHub search results. Stars and received forks are from public original projects only. No private repository names or links are published.</sub>
+
 
 ## Engineering principles
 
