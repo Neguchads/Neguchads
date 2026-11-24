@@ -79,7 +79,7 @@ I develop tools, applications and experimental static game recompilation project
   <img src="assets/github-stats.en.svg" width="100%" alt="Aggregate GitHub statistics and top languages of public and private projects" />
 </picture>
 
-<sub>Cards show a snapshot from Nov 24, 2026; see the refresh documentation. Aggregated active original projects, including accessible public and private repositories; third-party forks, archived repositories and this profile repository are excluded from project and language totals. Authored PRs and issues in account-owned repositories reflect accessible GitHub search results. Stars and received forks are from public original projects only. No private repository names or links are published.</sub>
+<sub>Cards show a dated snapshot; see the refresh documentation. Aggregated active original projects, including accessible public and private repositories; third-party forks, archived repositories and this profile repository are excluded from project and language totals. Authored PRs and issues in account-owned repositories reflect accessible GitHub search results. Stars and received forks are from public original projects only. No private repository names or links are published.</sub>
 
 [Methodology & refresh](docs/PROFILE_ANALYTICS.md)
 
