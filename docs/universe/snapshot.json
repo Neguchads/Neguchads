@@ -5,31 +5,31 @@
   "date": "2026-11-24",
   "sources": {
     "navi-graphify": "bfc064c3519ece7efdc66eab23bf089043ae830b",
-    "github-homepage": "b051e29c277a96055e52f61fd2eaf862d961d286",
+    "github-homepage": "19f9a8cb6aa09d7219746688b2a2b4c6420f904e",
     "navyv-abyss": "99b78bdbd48a0aa264f28b1565e022b1a4c89c56",
-    "Neguchads": "fd97e98a7a59d9754367e219ba094a5e0f367ffc"
+    "Neguchads": "2233031c432574fe2d123b5de7f8a57244d4a4a3"
   },
   "totals": {
-    "public_repositories": 49,
-    "active_originals": 10,
-    "stars": 35,
+    "public_repositories": 50,
+    "active_originals": 11,
+    "stars": 36,
     "forks": 1,
-    "open_items": 38,
+    "open_items": 41,
     "followers": 6
   },
   "languages": {
-    "Python": 4,
+    "Python": 5,
     "TypeScript": 3,
     "C++": 2
   },
   "history": [
     {
       "date": "2026-11-24",
-      "public_repositories": 49,
-      "active_originals": 10,
-      "stars": 35,
+      "public_repositories": 50,
+      "active_originals": 11,
+      "stars": 36,
       "forks": 1,
-      "open_items": 38,
+      "open_items": 41,
       "followers": 6
     }
   ],
@@ -58,11 +58,11 @@
         },
         {
           "slug": "cdos-nintendods-recomp",
-          "stars": 3,
+          "stars": 4,
           "forks": 0,
           "open_items": 3,
           "language": "Python",
-          "pushed_at": "2026-11-24T12:19:01Z",
+          "pushed_at": "2026-11-24T17:57:31Z",
           "fork": false,
           "archived": false,
           "title": "Dawn of Sorrow"
@@ -199,8 +199,8 @@
           "stars": 0,
           "forks": 0,
           "open_items": 0,
-          "language": null,
-          "pushed_at": "2026-11-24T15:48:19Z",
+          "language": "JavaScript",
+          "pushed_at": "2026-11-24T18:07:29Z",
           "fork": true,
           "archived": false,
           "title": "GitHub Homepage"
@@ -210,7 +210,7 @@
           "stars": 0,
           "forks": 0,
           "open_items": 1,
-          "language": null,
+          "language": "Python",
           "pushed_at": "2026-11-24T15:36:10Z",
           "fork": true,
           "archived": false,
@@ -222,7 +222,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-24T15:48:25Z",
+          "pushed_at": "2026-11-24T18:08:04Z",
           "fork": false,
           "archived": false,
           "title": "Neguchads Profile"
@@ -232,7 +232,7 @@
           "stars": 0,
           "forks": 0,
           "open_items": 0,
-          "language": null,
+          "language": "JavaScript",
           "pushed_at": "2026-11-24T15:36:01Z",
           "fork": true,
           "archived": false,
@@ -273,13 +273,13 @@
       "schema_version": 1,
       "scope": "public-code-only",
       "repository": "Neguchads",
-      "commit": "fd97e98a7a59d9754367e219ba094a5e0f367ffc",
-      "nodes": 136,
-      "edges": 207,
+      "commit": "2233031c432574fe2d123b5de7f8a57244d4a4a3",
+      "nodes": 147,
+      "edges": 237,
       "communities": 8,
       "confidence": {
-        "EXTRACTED": 207,
-        "INFERRED": 0,
+        "EXTRACTED": 233,
+        "INFERRED": 4,
         "OTHER": 0
       }
     }
@@ -291,5 +291,12 @@
     "csotn-saturn-recomp",
     "starlight-bi",
     "spec-to-proof"
-  ]
+  ],
+  "core_status": {
+    "scope": "public-core-ci",
+    "repository": "Neguchads/navi-core",
+    "commit": "640a0f6bdb079ebf13ad5dc641d55d708674abb3",
+    "run_id": 45455552256,
+    "state": "success"
+  }
 }
