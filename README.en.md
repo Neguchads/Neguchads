@@ -13,6 +13,18 @@ I develop tools, applications and experimental static game recompilation project
 
 ## Featured projects
 
+<p align="center">
+<a href="https://github.com/Neguchads/chad-recomp"><img src="assets/projects/chad-recomp.svg" width="48%" alt="Chad Standard Recomp" /></a>
+<a href="https://github.com/Neguchads/cdos-nintendods-recomp"><img src="assets/projects/cdos-nintendods-recomp.svg" width="48%" alt="Dawn of Sorrow Recompiled" /></a>
+<a href="https://github.com/Neguchads/ccod-xbox-recomp"><img src="assets/projects/ccod-xbox-recomp.svg" width="48%" alt="Curse of Darkness Recomp" /></a>
+<a href="https://github.com/Neguchads/csotn-saturn-recomp"><img src="assets/projects/csotn-saturn-recomp.svg" width="48%" alt="Symphony of the Night Recomp" /></a>
+<a href="https://github.com/Neguchads/starlight-bi"><img src="assets/projects/starlight-bi.svg" width="48%" alt="Starlight BI" /></a>
+<a href="https://github.com/Neguchads/spec-to-proof"><img src="assets/projects/spec-to-proof.svg" width="48%" alt="Spec-to-Proof" /></a>
+</p>
+
+<details>
+<summary><strong>Full project directory</strong></summary>
+
 ### Game engineering and preservation
 
 | Project | Description |
@@ -36,9 +48,15 @@ I develop tools, applications and experimental static game recompilation project
 **[Spec-to-Proof](https://github.com/Neguchads/spec-to-proof)** — Requirements, acceptance criteria and evidence-based verification.  
 **[Codex Universal Config](https://github.com/Neguchads/codex-config-universal)** — Portable configuration, privacy and reusable CI infrastructure.
 
+</details>
+
 ## Technology
 
-<img src="assets/stack.en.svg" width="100%" alt="Technology stack: native engineering, web applications, games, AI, automation, quality and delivery" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/stack.en.light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack.en.svg" />
+  <img src="assets/stack.en.svg" width="100%" alt="Technology stack: native engineering, web applications, games, AI, automation, quality and delivery" />
+</picture>
 
 <details>
 <summary>Technology list (text)</summary>
@@ -55,10 +73,15 @@ I develop tools, applications and experimental static game recompilation project
 
 ## GitHub Analytics
 
-<img src="assets/github-stats.en.svg" width="100%" alt="Aggregate GitHub statistics and top languages of public and private projects" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-stats.en.light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-stats.en.svg" />
+  <img src="assets/github-stats.en.svg" width="100%" alt="Aggregate GitHub statistics and top languages of public and private projects" />
+</picture>
 
-<sub>Aggregated active original projects, including accessible public and private repositories; third-party forks, archived repositories and this profile repository are excluded from project and language totals. Authored PRs and issues in account-owned repositories reflect accessible GitHub search results. Stars and received forks are from public original projects only. No private repository names or links are published.</sub>
+<sub>Cards show a snapshot from Nov 24, 2026; see the refresh documentation. Aggregated active original projects, including accessible public and private repositories; third-party forks, archived repositories and this profile repository are excluded from project and language totals. Authored PRs and issues in account-owned repositories reflect accessible GitHub search results. Stars and received forks are from public original projects only. No private repository names or links are published.</sub>
 
+[Methodology & refresh](docs/PROFILE_ANALYTICS.md)
 
 ## Engineering principles
 
