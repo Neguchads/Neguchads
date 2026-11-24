@@ -2,62 +2,76 @@
   <img src="assets/banner.svg" alt="Neguchads — Game engineering, AI and automation" width="100%" />
 </p>
 
+<p align="center"><strong>Game engineering · Artificial intelligence · Developer tooling</strong></p>
 <p align="center">
-  <strong>Engenharia de jogos · Inteligência artificial · Ferramentas para desenvolvedores</strong>
+  <a href="#featured-projects">Projects</a> · <a href="#technology">Technology</a> · <a href="#engineering-principles">Engineering</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositories</a> · <a href="#github-analytics">GitHub Analytics</a>
 </p>
-<p align="center">
-  <a href="#projetos-em-destaque">Projetos</a> · <a href="#tecnologias">Tecnologias</a> · <a href="#como-desenvolvo">Engenharia</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositórios</a> · <a href="README.en.md">English</a>
-</p>
+<p align="center"><a href="README.pt-BR.md"><img src="assets/language-pt.svg" alt="Leia em português brasileiro" height="32" /></a></p>
 
-Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação estática de jogos. Meu foco é transformar problemas técnicos em soluções reproduzíveis, com documentação clara, automação e testes verificáveis.
 
-## Projetos em destaque
+I develop tools, applications and experimental static game recompilation projects. My focus is on turning technical problems into reproducible solutions through clear documentation, automation and verifiable tests.
 
-### Engenharia de jogos e preservação
+## Featured projects
 
-| Projeto | Descrição |
+### Game engineering and preservation
+
+| Project | Description |
 | :--- | :--- |
-| **[Chad Standard Recomp](https://github.com/Neguchads/chad-recomp)** | Padrão universal de engenharia para ports, recompiladores e jogos. Especificação em desenvolvimento, schema e validador de manifestos. |
-| **[Dawn of Sorrow Recompiled](https://github.com/Neguchads/cdos-nintendods-recomp)** | Nintendo DS · Recompilação AOT, Direct3D 12, Vulkan e integração com RecompLauncher. [Releases](https://github.com/Neguchads/cdos-nintendods-recomp/releases) |
-| **[Curse of Darkness Recomp](https://github.com/Neguchads/ccod-xbox-recomp)** | Xbox · Port experimental para Windows por recompilação estática. |
-| **[Symphony of the Night Recomp](https://github.com/Neguchads/csotn-saturn-recomp)** | Sega Saturn · Motor, runtime nativo, ferramentas de recompilação e testes. |
+| **[Chad Standard Recomp](https://github.com/Neguchads/chad-recomp)** | Universal engineering standard for ports, recompilers and games. Draft specification, schema and manifest validator. |
+| **[Dawn of Sorrow Recompiled](https://github.com/Neguchads/cdos-nintendods-recomp)** | Nintendo DS · AOT recompilation, Direct3D 12, Vulkan and RecompLauncher integration. [Releases](https://github.com/Neguchads/cdos-nintendods-recomp/releases) |
+| **[Curse of Darkness Recomp](https://github.com/Neguchads/ccod-xbox-recomp)** | Xbox · Experimental Windows port through static recompilation. |
+| **[Symphony of the Night Recomp](https://github.com/Neguchads/csotn-saturn-recomp)** | Sega Saturn · Native runtime, engine, recompilation tools and tests. |
 
-### Aplicações e inteligência artificial
+### Applications and artificial intelligence
 
-| Projeto | Descrição |
+| Project | Description |
 | :--- | :--- |
-| **[Starlight BI](https://github.com/Neguchads/starlight-bi)** | Dashboards interativos e edição visual de dados. |
-| **[ScriptForge](https://github.com/Neguchads/ScriptForge)** | Estúdio web de criação de conteúdo e música assistida por IA. |
-| **[Favorite Manager](https://github.com/Neguchads/favorite-manager)** | Gerenciador de favoritos para navegadores Chromium com organização por IA local. |
-| **[PoseClone / ComfyUI](https://github.com/Neguchads/comfyui)** | Workflows e ferramentas Python para referências visuais e consistência de personagens. |
+| **[Starlight BI](https://github.com/Neguchads/starlight-bi)** | Interactive dashboards and visual data editing. |
+| **[ScriptForge](https://github.com/Neguchads/ScriptForge)** | Web studio for AI-assisted content and music creation. |
+| **[Favorite Manager](https://github.com/Neguchads/favorite-manager)** | Chromium bookmark manager with local AI organization. |
+| **[PoseClone / ComfyUI](https://github.com/Neguchads/comfyui)** | Python tools and workflows for visual references and character consistency. |
 
-### Ferramentas para desenvolvedores
+### Developer tooling
 
-**[Spec-to-Proof](https://github.com/Neguchads/spec-to-proof)** — Requisitos, critérios de aceitação e verificação com evidências.  
-**[Codex Universal Config](https://github.com/Neguchads/codex-config-universal)** — Configurações portáveis, privacidade e infraestrutura reutilizável de CI.
+**[Spec-to-Proof](https://github.com/Neguchads/spec-to-proof)** — Requirements, acceptance criteria and evidence-based verification.  
+**[Codex Universal Config](https://github.com/Neguchads/codex-config-universal)** — Portable configuration, privacy and reusable CI infrastructure.
 
-## Tecnologias
+## Technology
 
-| Área | Stack |
+<img src="assets/stack.en.svg" width="100%" alt="Technology stack: native engineering, web applications, games, AI, automation, quality and delivery" />
+
+<details>
+<summary>Technology list (text)</summary>
+
+| Area | Stack |
 | :--- | :--- |
-| Engenharia nativa | C · C++ · Python · CMake · Ninja · LLVM/Clang |
-| Aplicações web | TypeScript · JavaScript · React · Node.js |
-| Jogos e gráficos | SDL3 · Dear ImGui · Direct3D 12 · Vulkan |
-| IA e automação | Codex · Ollama · ComfyUI · PowerShell |
-| Qualidade e entrega | Git · GitHub Actions · CodeQL · Playwright · Vitest · Hypothesis |
+| Native engineering | C · C++ · Python · CMake · Ninja · LLVM/Clang |
+| Web applications | TypeScript · JavaScript · React · Node.js |
+| Games and graphics | SDL3 · Dear ImGui · Direct3D 12 · Vulkan |
+| AI and automation | Codex · Ollama · ComfyUI · PowerShell |
+| Quality and delivery | Git · GitHub Actions · CodeQL · Playwright · Vitest · Hypothesis |
 
-## Como desenvolvo
+</details>
 
-- **Reprodutibilidade:** builds incrementais, dependências rastreáveis e documentação técnica.
-- **Qualidade:** testes de regressão, propriedades, fuzzing e benchmarks nos projetos aplicáveis.
-- **Segurança:** análise estática, verificações de integridade e evidências de distribuição onde disponíveis.
-- **Código aberto:** licenças por projeto, atribuição de dependências e respeito aos direitos de terceiros.
+## GitHub Analytics
 
-Os ports de jogos são experimentais e exigem a própria cópia compatível do jogo. Consulte o README e os termos de cada projeto antes de distribuir ou reutilizar arquivos.
+<img src="assets/github-stats.en.svg" width="100%" alt="Aggregate GitHub statistics and top languages of public and private projects" />
+
+<sub>Aggregated active original projects, including accessible public and private repositories; third-party forks, archived repositories and this profile repository are excluded from project and language totals. Authored PRs and issues in account-owned repositories reflect accessible GitHub search results. Stars and received forks are from public original projects only. No private repository names or links are published.</sub>
+
+
+## Engineering principles
+
+- **Reproducibility:** incremental builds, traceable dependencies and technical documentation.
+- **Quality:** regression and property tests, fuzzing and benchmarks where applicable.
+- **Security:** static analysis, integrity checks and distribution evidence where available.
+- **Open source:** project-specific licensing, dependency attribution and respect for third-party rights.
+
+Game ports are experimental and require your own compatible game copy. Consult each project's README and licensing terms before redistribution or reuse.
 
 ---
 
 <p align="center">
   <strong>Explore. Build. Verify.</strong><br />
-  <a href="https://github.com/Neguchads?tab=repositories">Todos os repositórios públicos</a>
+  <a href="https://github.com/Neguchads?tab=repositories">All public repositories</a>
 </p>
