@@ -52,6 +52,14 @@ Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação 
 
 </details>
 
+## Ecossistema de engenharia
+
+<a href="https://github.com/Neguchads/github-homepage/tree/main/docs/explore"><img src="assets/ecosystem.pt-BR.svg" width="100%" alt="Mapa dos projetos públicos Neguchads" /></a>
+
+[NAVI Graphify](https://github.com/Neguchads/navi-graphify) fornece o catálogo público versionado. [GitHub Homepage](https://github.com/Neguchads/github-homepage) gera o mapa e o explorador offline. Grafos privados e memória de agentes permanecem locais.
+
+[Abrir explorador e baixar HTML](https://github.com/Neguchads/github-homepage/tree/main/docs/explore) · [Arquitetura e privacidade](docs/ECOSYSTEM.md)
+
 ## Tecnologias
 
 <picture>

@@ -50,6 +50,14 @@ I develop tools, applications and experimental static game recompilation project
 
 </details>
 
+## Engineering ecosystem
+
+<a href="https://github.com/Neguchads/github-homepage/tree/main/docs/explore"><img src="assets/ecosystem.en.svg" width="100%" alt="Neguchads public project map" /></a>
+
+[NAVI Graphify](https://github.com/Neguchads/navi-graphify) provides the versioned public catalog. [GitHub Homepage](https://github.com/Neguchads/github-homepage) generates the map and offline explorer. Private graphs and agent memory remain local.
+
+[Explore and download offline HTML](https://github.com/Neguchads/github-homepage/tree/main/docs/explore) · [Architecture and privacy](docs/ECOSYSTEM.md)
+
 ## Technology
 
 <picture>
