@@ -11,6 +11,12 @@
 
 I develop tools, applications and experimental static game recompilation projects. My focus is on turning technical problems into reproducible solutions through clear documentation, automation and verifiable tests.
 
+## NAVI Engineering Universe
+
+<a href="docs/UNIVERSE.md"><img src="assets/universe.en.svg" width="100%" alt="NAVI Universe — unified public projects and metrics" /></a>
+
+[Hosted 3D dashboard (when Pages is enabled)](https://neguchads.github.io/Neguchads/) · [Offline bundle after the first run](https://github.com/Neguchads/Neguchads/tree/main/docs/universe) · [Architecture and daily refresh](docs/UNIVERSE.md)
+
 ## Featured projects
 
 <p align="center">
@@ -80,6 +86,9 @@ I develop tools, applications and experimental static game recompilation project
 </details>
 
 ## GitHub Analytics
+
+The NAVI Universe above provides the daily public snapshot. The card below is a separate historical aggregate, not refreshed by this pipeline.
+
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/github-stats.en.light.svg" />

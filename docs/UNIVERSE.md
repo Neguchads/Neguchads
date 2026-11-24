@@ -1,0 +1,9 @@
+# NAVI Engineering Universe
+
+Four versioned components: [Graphify](https://github.com/Neguchads/navi-graphify), [Homepage](https://github.com/Neguchads/github-homepage), [Abyss](https://github.com/Neguchads/navyv-abyss), [Profile](https://github.com/Neguchads/Neguchads). The profile orchestrates a daily public-only snapshot at 09:23 UTC (06:23 Brasília); scheduled Actions are best effort. Upstream code is pinned by commit; daily data are fresh. Review pin changes via PR. No cross-repo write token, personal PAT, commercial Graphify Cloud or browser API credentials required.
+
+The 3D dashboard projects XYZ coordinates onto Canvas; the original WebGPU Abyss world is a separate optional experience. GitHub README supports static SVG, not interactive JS. After the first successful main-branch run, the bundle is in docs/universe; download the folder to use offline. For hosted interactive access, enable Settings > Pages > Source: GitHub Actions, and set repository Actions variable NAVI_ENABLE_PAGES=true. Expected URL: https://neguchads.github.io/Neguchads/. The Pages job is optional and does not gate snapshot commits.
+
+Metrics cover publicly visible owned repositories; aggregate originals exclude forks, archived repos and profile. Daily history begins at first successful run; no backfilled numbers. Structural Graphify scan is attempted for the public profile; failures are explicitly unavailable and do not prevent analytics publication. Raw graphs and private data are never published. Existing private-inclusive aggregate cards are historical, separate from this public dataset.
+
+Publication uses a separate write-permission job; the build job has read permission only. A failed build leaves the previous snapshot intact. Check the Actions run for evidence. The original six featured cards are refreshed in the same build.
