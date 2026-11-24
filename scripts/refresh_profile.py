@@ -31,8 +31,8 @@ def api(endpoint, paginate=False):
         raise RuntimeError("GitHub API request failed. Check your local authentication and read access.") from None
 
 
-def count_items(kind):
-    q = urllib.parse.urlencode({"q": f"is:{kind} author:{OWNER} user:{OWNER}", "per_page": 1})
+def count_items(kind, extra=""):
+    q = urllib.parse.urlencode({"q": f"is:{kind} {extra} author:{OWNER} user:{OWNER}", "per_page": 1})
     data = api("/search/issues?" + q)
     if data.get("incomplete_results") or not isinstance(data.get("total_count"), int):
         raise RuntimeError("Incomplete activity query; existing cards preserved.")
@@ -65,7 +65,8 @@ def collect(by_bytes):
     if not langs:
         raise RuntimeError("No detected languages; existing cards preserved.")
     metrics = [len(repos), sum(r["stargazers_count"] for r in public),
-               count_items("pr"), count_items("issue"), sum(r["forks_count"] for r in public)]
+               count_items("pr"), count_items("issue"), sum(r["forks_count"] for r in public),
+               count_items("pr", "is:merged")]
     return metrics, langs, detected
 
 
@@ -79,12 +80,21 @@ def render(path, metrics, langs, detected, by_bytes, pt):
     if len(ranked) > 8:
         ranked = ranked[:7] + [("Outras" if pt else "Other", sum(v for _, v in ranked[7:]))]
     total = sum(langs.values())
+    if total <= 0:
+        raise RuntimeError("No detected languages.")
+    offset = 0.0
+    nodes["donut-total"].text = str(detected)
     for i in range(8):
         visible = i < len(ranked)
         name, n = ranked[i] if visible else ("", 0)
         nodes[f"row{i}"].set("visibility", "visible" if visible else "hidden")
         nodes[f"lang{i}"].text = name if len(name) <= 17 else name[:16] + "…"
-        nodes[f"bar{i}"].set("width", f"{223*n/total:.2f}")
+        share = 100*n/total
+        arc = nodes[f"arc{i}"]
+        arc.set("visibility", "visible" if visible else "hidden")
+        arc.set("stroke-dasharray", f"{share:.5f} {100-share:.5f}")
+        arc.set("stroke-dashoffset", f"{-offset:.5f}")
+        offset += share
         nodes[f"pct{i}"].text = f"{100*n/total:.1f}%"
     nodes["method"].text = (
         ("Por bytes de código" if by_bytes else "Por projeto próprio") + " · públicos + privados"
@@ -102,7 +112,8 @@ def main():
     parser.add_argument("--by-bytes", action="store_true", help="Use GitHub Linguist byte counts instead of primary language per repository.")
     args = parser.parse_args()
     metrics, langs, detected = collect(args.by_bytes)
-    files = [(ROOT / "assets" / f"github-stats.{locale}.svg", locale == "pt-BR") for locale in ("en", "pt-BR")]
+    files = [(ROOT / "assets" / f"github-stats.{locale}{theme}.svg", locale == "pt-BR")
+             for locale in ("en", "pt-BR") for theme in ("", ".light")]
     rendered = [(p, render(p, metrics, langs, detected, args.by_bytes, pt)) for p, pt in files]
     for p, content in rendered:
         temp = p.with_suffix(".tmp")
