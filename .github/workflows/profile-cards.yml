@@ -1,0 +1,60 @@
+name: Profile cards
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/profile-cards.yml'
+      - 'scripts/**'
+      - 'tests/**'
+  schedule:
+    - cron: '23 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-cards-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify profile assets and privacy boundaries
+        run: python3 -m unittest discover -s tests -v
+
+  refresh:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Refresh only public showcase metrics
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/refresh_public_cards.py
+      - name: Commit changed public card SVGs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add -- assets/projects/chad-recomp.svg assets/projects/cdos-nintendods-recomp.svg assets/projects/ccod-xbox-recomp.svg assets/projects/csotn-saturn-recomp.svg assets/projects/starlight-bi.svg assets/projects/spec-to-proof.svg
+          if git diff --cached --quiet; then
+            echo "Public cards already current."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "docs: refresh public project cards"
+          gh auth setup-git
+          git push origin HEAD:main
