@@ -6,6 +6,8 @@ on:
   pull_request:
     paths:
       - 'scripts/build_universe.py'
+      - 'scripts/core_status.py'
+      - 'tests/test_core_status.py'
       - 'scripts/publish_universe.py'
       - 'tests/test_publish_universe.py'
       - 'docs/universe-pins.json'
@@ -14,6 +16,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_universe.py'
+      - 'scripts/core_status.py'
+      - 'tests/test_core_status.py'
       - 'scripts/publish_universe.py'
       - 'tests/test_publish_universe.py'
       - 'docs/universe-pins.json'
