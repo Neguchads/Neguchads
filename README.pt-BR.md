@@ -15,6 +15,18 @@ Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação 
 
 ## Projetos em destaque
 
+<p align="center">
+<a href="https://github.com/Neguchads/chad-recomp"><img src="assets/projects/chad-recomp.svg" width="48%" alt="Chad Standard Recomp" /></a>
+<a href="https://github.com/Neguchads/cdos-nintendods-recomp"><img src="assets/projects/cdos-nintendods-recomp.svg" width="48%" alt="Dawn of Sorrow Recompiled" /></a>
+<a href="https://github.com/Neguchads/ccod-xbox-recomp"><img src="assets/projects/ccod-xbox-recomp.svg" width="48%" alt="Curse of Darkness Recomp" /></a>
+<a href="https://github.com/Neguchads/csotn-saturn-recomp"><img src="assets/projects/csotn-saturn-recomp.svg" width="48%" alt="Symphony of the Night Recomp" /></a>
+<a href="https://github.com/Neguchads/starlight-bi"><img src="assets/projects/starlight-bi.svg" width="48%" alt="Starlight BI" /></a>
+<a href="https://github.com/Neguchads/spec-to-proof"><img src="assets/projects/spec-to-proof.svg" width="48%" alt="Spec-to-Proof" /></a>
+</p>
+
+<details>
+<summary><strong>Catálogo completo dos projetos</strong></summary>
+
 ### Engenharia de jogos e preservação
 
 | Projeto | Descrição |
@@ -38,9 +50,15 @@ Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação 
 **[Spec-to-Proof](https://github.com/Neguchads/spec-to-proof)** — Requisitos, critérios de aceitação e verificação com evidências.  
 **[Codex Universal Config](https://github.com/Neguchads/codex-config-universal)** — Configurações portáveis, privacidade e infraestrutura reutilizável de CI.
 
+</details>
+
 ## Tecnologias
 
-<img src="assets/stack.pt-BR.svg" width="100%" alt="Stack: engenharia nativa, aplicações web, jogos, IA, automação, qualidade e entrega" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/stack.pt-BR.light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack.pt-BR.svg" />
+  <img src="assets/stack.pt-BR.svg" width="100%" alt="Stack: engenharia nativa, aplicações web, jogos, IA, automação, qualidade e entrega" />
+</picture>
 
 <details>
 <summary>Lista de tecnologias em texto</summary>
@@ -57,10 +75,15 @@ Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação 
 
 ## GitHub Analytics
 
-<img src="assets/github-stats.pt-BR.svg" width="100%" alt="Estatísticas agregadas do GitHub e principais linguagens de projetos públicos e privados" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-stats.pt-BR.light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-stats.pt-BR.svg" />
+  <img src="assets/github-stats.pt-BR.svg" width="100%" alt="Estatísticas agregadas do GitHub e principais linguagens de projetos públicos e privados" />
+</picture>
 
-<sub>Estatísticas agregadas de projetos próprios ativos, públicos e privados acessíveis; forks de terceiros, arquivados e o repositório de perfil são excluídos da contagem e das linguagens. PRs e issues de minha autoria nos repositórios da conta, conforme resultados acessíveis da busca GitHub. Estrelas e forks recebidos: somente projetos públicos próprios. Nenhum nome ou link privado é publicado.</sub>
+<sub>Os cartões apresentam um retrato datado; veja a documentação de atualização. Estatísticas agregadas de projetos próprios ativos, públicos e privados acessíveis; forks de terceiros, arquivados e o repositório de perfil são excluídos da contagem e das linguagens. PRs e issues de minha autoria nos repositórios da conta, conforme resultados acessíveis da busca GitHub. Estrelas e forks recebidos: somente projetos públicos próprios. Nenhum nome ou link privado é publicado.</sub>
 
+[Metodologia e atualização](docs/PROFILE_ANALYTICS.md)
 
 ## Como desenvolvo
 
