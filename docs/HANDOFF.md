@@ -1,11 +1,11 @@
 # Handoff / Transferência de contexto
 
-Scope: NAVI-OS public profile Command Center, branch `feat/navi-command-center`.
+PR #9 is merged (05a83c8); Profile cards and NAVI pilot passed. Visual browser review remains pending.
 
-Implemented in this change: bilingual navigation and component map, local light/dark artwork, consolidated architecture, roadmap and handoff, regression tests. Existing public metrics, brand logo and CI configuration retained. README showcase now prioritizes five engineering tools/frameworks and only CCOD as a featured game. Three new static role cards do not invent statistics. Older cards remain available for the independent generated Universe bundle.
+Current scope: canonical profile showcase and repository rename compatibility. README references use navi-githomepage and navi-abyss; the pinned upstream provenance keys are retained until schema migration. Build bridge verifies public identity and fork status for the two renamed repositories and NAVI Core. No private data or new credentials. Dashboard publication requires successful CI and a fresh main run.
 
-Acceptance: static source review and remote CI/visual review still required. No claims of execution of NAVI CLI, authenticated agent integration or production certification. No secrets or private memory included.
+Dependencies: [GitHomepage #7](https://github.com/Neguchads/navi-githomepage/pull/7), [Abyss #4](https://github.com/Neguchads/navi-abyss/pull/4), [Graphify #6](https://github.com/Neguchads/navi-graphify/pull/6). Open at the time of this update; do not pin unmerged heads.
 
-Next: inspect the PR's rendered README in both themes; check the existing NAVI pilot result. Publish only after review. Rollback: revert the Command Center commit if merged; no migration or generated-data change is required.
+Next: verify PR tests and rendered output; merge if approved, verify main build/publish/Pages and review upstream pins separately. Rollback: revert this change and rebuild with the earlier compatible pins; generated snapshot may need regeneration. Do not force push.
 
-References: [architecture](ARCHITECTURE.md), [roadmap](ROADMAP.md), [pilot](NAVI_PILOT.md).
+References: [architecture](ARCHITECTURE.md), [roadmap](ROADMAP.md), [showcase](showcase.json), [pilot](NAVI_PILOT.md).

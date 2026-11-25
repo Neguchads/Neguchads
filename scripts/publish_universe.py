@@ -9,11 +9,15 @@ import subprocess
 import time
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-FEATURED = ("chad-recomp", "cdos-nintendods-recomp", "ccod-xbox-recomp",
-            "csotn-saturn-recomp", "starlight-bi", "spec-to-proof")
+try:
+    from .showcase import load
+except ImportError:  # direct CLI execution
+    from showcase import load
+FEATURED = load()
+LEGACY_FEATURED = ("cdos-nintendods-recomp", "csotn-saturn-recomp", "starlight-bi")
 FILES = ("index.html", "abyss.html", "ABYSS-LICENSE.txt", "snapshot.json",
          "universe.en.svg", "universe.pt-BR.svg", "assets/banner.svg")
-INPUTS = ("scripts", "docs/universe-pins.json", "docs/universe/snapshot.json",
+INPUTS = ("scripts", "docs/universe-pins.json", "docs/showcase.json", "docs/universe/snapshot.json",
           "assets/banner.svg", "assets/projects", ".github/workflows/navi-universe.yml")
 
 def git(root, *args, check=True, capture=False):
@@ -28,7 +32,7 @@ def validate(bundle):
     if not re.fullmatch(r"[0-9a-f]{40}", source):
         raise ValueError("Invalid snapshot source")
     featured = data["featured"]
-    if not isinstance(featured, list) or len(featured) != len(set(featured)) or not set(featured) <= set(FEATURED):
+    if not isinstance(featured, list) or len(featured) != len(set(featured)) or not set(featured) <= set(FEATURED) or featured != [s for s in FEATURED if s in featured]:
         raise ValueError("Invalid featured catalog")
     paths = [*FILES, *("assets/projects/"+s+".svg" for s in featured)]
     for path in paths:
@@ -57,7 +61,7 @@ def apply(root, bundle, paths, featured):
     # Remove only obsolete generated project images from the published bundle.
     directory = root / "docs/universe/assets/projects"
     if directory.is_dir():
-        for slug in set(FEATURED) - set(featured):
+        for slug in (set(FEATURED) | set(LEGACY_FEATURED)) - set(featured):
             (directory / (slug+".svg")).unlink(missing_ok=True)
     for rel in ("universe.en.svg", "universe.pt-BR.svg", *("assets/projects/"+s+".svg" for s in featured)):
         dest = root / "assets" / (rel.removeprefix("assets/"))
