@@ -7,7 +7,7 @@
     "navi-graphify": "aa0a4faf7f833701751a851dad790637a7024d8e",
     "navi-githomepage": "db7b987a8aa505e6e439bf8fbead2f4340488e97",
     "navi-abyss": "5d05a530d45660f27c71a6434759c8598bdf6e20",
-    "Neguchads": "d420953d2fca289280f6efb5be0a27a3150fbcb7"
+    "Neguchads": "220ddfb48231946ad272e203f5abb7751b88842c"
   },
   "totals": {
     "public_repositories": 50,
@@ -220,7 +220,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-25T12:34:50Z",
+          "pushed_at": "2026-11-25T12:38:01Z",
           "fork": false,
           "archived": false,
           "title": "Neguchads Profile"
@@ -241,9 +241,9 @@
           "title": "NAVI GitHomepage",
           "stars": 0,
           "forks": 0,
-          "open_items": 1,
+          "open_items": 0,
           "language": "JavaScript",
-          "pushed_at": "2026-11-25T12:34:36Z",
+          "pushed_at": "2026-11-25T12:36:37Z",
           "fork": true,
           "archived": false
         },
@@ -298,12 +298,12 @@
       "schema_version": 1,
       "scope": "public-code-only",
       "repository": "Neguchads",
-      "commit": "d420953d2fca289280f6efb5be0a27a3150fbcb7",
-      "nodes": 185,
-      "edges": 303,
-      "communities": 10,
+      "commit": "220ddfb48231946ad272e203f5abb7751b88842c",
+      "nodes": 190,
+      "edges": 311,
+      "communities": 9,
       "confidence": {
-        "EXTRACTED": 298,
+        "EXTRACTED": 306,
         "INFERRED": 5,
         "OTHER": 0
       }
@@ -317,5 +317,11 @@
     "chad-recomp",
     "ccod-xbox-recomp"
   ],
-  "core_status": null
+  "core_status": {
+    "scope": "public-core-ci",
+    "repository": "Neguchads/navi-core",
+    "commit": "0c25dfc28a77ceafc950dab1df016674102b7fbd",
+    "run_id": 45607575057,
+    "state": "success"
+  }
 }
