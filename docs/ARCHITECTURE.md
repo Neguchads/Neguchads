@@ -6,7 +6,7 @@ NAVI-OS is the umbrella identity; NAVI Core contains the executable CLI and NEF 
 - Profile README and local SVGs: static, bilingual, no executable browser code.
 - Graphify: reviewed public catalog and optional structural summary.
 - Homepage: renders the public catalog and snapshot.
-- Abyss: optional interactive world in the separately generated Pages/offline bundle.
+- Abyss: cosmic repository-star navigation and separate legacy WebGPU world in the separately generated Pages/offline bundle.
 - NAVI Core: existing pinned read-only Python verification gate. NEF guides documentation and agent handoff; the profile does not execute a hosted agent.
 - Universe daily: existing single writer of generated assets. Command-center artwork is a separate reviewed static asset, not generated metrics.
 

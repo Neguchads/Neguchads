@@ -15,3 +15,5 @@
 Evidence: [PR #9](https://github.com/Neguchads/Neguchads/pull/9), [Profile cards](https://github.com/Neguchads/Neguchads/actions/runs/45603429639), [NAVI pilot](https://github.com/Neguchads/Neguchads/actions/runs/45603430144).
 
 See [handoff](HANDOFF.md).
+
+PR #11 prepares the coordinated canonical source-key migration and cosmic publication; pending upstream integration and CI.

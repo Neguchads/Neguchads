@@ -28,7 +28,7 @@ A public control surface for an independent engineering ecosystem. NAVI-OS is th
 | **[Universal Agent Interface](https://github.com/Neguchads/navi-core/blob/main/docs/UNIVERSAL_AGENT_INTERFACE.md)** | Portable context and structured handoff; optional MCP. |
 | **[NAVI Graphify](https://github.com/Neguchads/navi-graphify)** | Versioned public project catalog and knowledge graph tooling. |
 | **[NAVI GitHomepage](https://github.com/Neguchads/navi-githomepage)** | Brand, cards and interactive explorer renderer. |
-| **[NAVI Abyss](https://github.com/Neguchads/navi-abyss)** | Optional interactive world. |
+| **[NAVI Abyss](https://github.com/Neguchads/navi-abyss)** | Cosmic ocean and repository-star navigation. |
 
 **Engineering workflow:** Clarify → Plan → Build → Verify → Record evidence → Handoff.
 

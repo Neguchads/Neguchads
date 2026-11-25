@@ -15,7 +15,7 @@ except ImportError:  # direct CLI execution
     from showcase import load
 FEATURED = load()
 LEGACY_FEATURED = ("cdos-nintendods-recomp", "csotn-saturn-recomp", "starlight-bi")
-FILES = ("index.html", "abyss.html", "ABYSS-LICENSE.txt", "snapshot.json",
+FILES = ("index.html", "cosmic.html", "abyss.html", "ABYSS-LICENSE.txt", "snapshot.json",
          "universe.en.svg", "universe.pt-BR.svg", "assets/banner.svg")
 INPUTS = ("scripts", "docs/universe-pins.json", "docs/showcase.json", "docs/universe/snapshot.json",
           "assets/banner.svg", "assets/projects", ".github/workflows/navi-universe.yml")
