@@ -12,6 +12,8 @@ on:
       - 'scripts/core_status.py'
       - 'tests/test_core_status.py'
       - 'scripts/publish_universe.py'
+      - 'scripts/verify_hosted.py'
+      - 'tests/test_verify_hosted.py'
       - 'tests/test_publish_universe.py'
       - 'docs/universe-pins.json'
       - '.github/workflows/navi-universe.yml'
@@ -25,6 +27,8 @@ on:
       - 'scripts/core_status.py'
       - 'tests/test_core_status.py'
       - 'scripts/publish_universe.py'
+      - 'scripts/verify_hosted.py'
+      - 'tests/test_verify_hosted.py'
       - 'tests/test_publish_universe.py'
       - 'docs/universe-pins.json'
       - '.github/workflows/navi-universe.yml'
@@ -132,3 +136,22 @@ jobs:
           artifact_name: github-pages-${{ github.run_attempt }}
           timeout: 600000
           error_count: 15
+
+  hosted-verify:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.NAVI_ENABLE_PAGES == 'true'
+    needs: pages
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+        with:
+          name: navi-universe
+          path: expected-site
+      - name: Verify public HTTPS artifact bytes without credentials
+        run: python3 -B scripts/verify_hosted.py expected-site

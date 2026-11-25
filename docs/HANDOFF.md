@@ -21,3 +21,6 @@ Snapshot publication succeeded at 39b60ca. Pages attempts 1 and 2 uploaded their
 
 ## Coordinated maintenance
 The earlier deployment succeeded in run 45615633806. Repin merged Graphify #8/#9, Abyss #6 and GitHomepage #10; refresh Core pilot to the already verified 0c25dfc revision. Graphify security gate and Python 3.11–3.14 matrix passed; Abyss and Homepage passed browser/functional and dependency checks; Core #32 updated CI dependencies after all six gates. Verify fresh profile CI and public deployment. No administrative permission changes or automatic release of upstream graphifyy.
+
+## Security and hosted verification follow-up
+Repin Graphify #10 (non-loopback auth and blocking medium/high Bandit), Abyss #7 (catalog validation), and Homepage #11 (snapshot mutation regressions). The external hosted check compares four exact artifact files via anonymous fixed HTTPS URLs with bounded retry; a deploy success alone is insufficient. The check is not a screenshot or full browser review. All upstream PR gates passed; verify current main and hosted deployment.
