@@ -4,17 +4,17 @@
   "owner": "Neguchads",
   "date": "2026-11-25",
   "sources": {
-    "navi-graphify": "aa0a4faf7f833701751a851dad790637a7024d8e",
-    "navi-githomepage": "db7b987a8aa505e6e439bf8fbead2f4340488e97",
-    "navi-abyss": "5d05a530d45660f27c71a6434759c8598bdf6e20",
-    "Neguchads": "220ddfb48231946ad272e203f5abb7751b88842c"
+    "navi-graphify": "8f41b96f2a7ad6c9c286fc4ec1dc9ff6644fcac9",
+    "navi-githomepage": "16860c4a75ac83a3511b9fdb715ead04cfb0b132",
+    "navi-abyss": "554ec872852c86d5ef638da2651aab0bd7bf5186",
+    "Neguchads": "e096dcbc8e04d25d9cd12a77f7774138c2429646"
   },
   "totals": {
     "public_repositories": 50,
     "active_originals": 11,
     "stars": 36,
     "forks": 1,
-    "open_items": 42,
+    "open_items": 40,
     "followers": 6
   },
   "languages": {
@@ -38,7 +38,7 @@
       "active_originals": 11,
       "stars": 36,
       "forks": 1,
-      "open_items": 42,
+      "open_items": 40,
       "followers": 6
     }
   ],
@@ -207,9 +207,9 @@
           "slug": "navi-graphify",
           "stars": 0,
           "forks": 0,
-          "open_items": 2,
+          "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-25T11:50:16Z",
+          "pushed_at": "2026-11-25T12:47:56Z",
           "fork": true,
           "archived": false,
           "title": "NAVI Graphify"
@@ -220,7 +220,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-25T12:38:01Z",
+          "pushed_at": "2026-11-25T12:49:46Z",
           "fork": false,
           "archived": false,
           "title": "Neguchads Profile"
@@ -230,9 +230,9 @@
           "title": "NAVI Engineering Core",
           "stars": 0,
           "forks": 0,
-          "open_items": 4,
+          "open_items": 2,
           "language": "Python",
-          "pushed_at": "2026-11-25T11:46:39Z",
+          "pushed_at": "2026-11-25T12:46:41Z",
           "fork": false,
           "archived": false
         },
@@ -243,7 +243,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "JavaScript",
-          "pushed_at": "2026-11-25T12:36:37Z",
+          "pushed_at": "2026-11-25T12:46:55Z",
           "fork": true,
           "archived": false
         },
@@ -254,7 +254,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "JavaScript",
-          "pushed_at": "2026-11-25T12:03:42Z",
+          "pushed_at": "2026-11-25T12:45:48Z",
           "fork": true,
           "archived": false
         }
@@ -298,12 +298,12 @@
       "schema_version": 1,
       "scope": "public-code-only",
       "repository": "Neguchads",
-      "commit": "220ddfb48231946ad272e203f5abb7751b88842c",
-      "nodes": 190,
-      "edges": 311,
-      "communities": 9,
+      "commit": "e096dcbc8e04d25d9cd12a77f7774138c2429646",
+      "nodes": 193,
+      "edges": 314,
+      "communities": 10,
       "confidence": {
-        "EXTRACTED": 306,
+        "EXTRACTED": 309,
         "INFERRED": 5,
         "OTHER": 0
       }
@@ -320,8 +320,8 @@
   "core_status": {
     "scope": "public-core-ci",
     "repository": "Neguchads/navi-core",
-    "commit": "0c25dfc28a77ceafc950dab1df016674102b7fbd",
-    "run_id": 45607575057,
+    "commit": "a759bf8c678563aef51090a02b69e9fdb8e7aec2",
+    "run_id": 45616976791,
     "state": "success"
   }
 }
