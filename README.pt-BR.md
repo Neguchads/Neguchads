@@ -29,8 +29,8 @@ Interface pública de um ecossistema independente de engenharia. NAVI-OS é a id
 | **[NEF](https://github.com/Neguchads/navi-core/blob/main/docs/NEF.md)** | Perfis de arquitetura, políticas de referência, roadmap, handoff e aprendizado revisado. |
 | **[Universal Agent Interface](https://github.com/Neguchads/navi-core/blob/main/docs/UNIVERSAL_AGENT_INTERFACE.md)** | Contexto portável e handoff estruturado; MCP opcional. |
 | **[NAVI Graphify](https://github.com/Neguchads/navi-graphify)** | Catálogo público versionado e ferramentas de grafo de conhecimento. |
-| **[GitHub Homepage](https://github.com/Neguchads/github-homepage)** | Identidade visual, cards e renderizador do explorador interativo. |
-| **[NAVI Abyss](https://github.com/Neguchads/navyv-abyss)** | Mundo interativo opcional. |
+| **[NAVI GitHomepage](https://github.com/Neguchads/navi-githomepage)** | Identidade visual, cards e renderizador do explorador interativo. |
+| **[NAVI Abyss](https://github.com/Neguchads/navi-abyss)** | Mundo interativo opcional. |
 
 **Fluxo de engenharia:** Esclarecer → Planejar → Implementar → Verificar → Registrar evidências → Handoff.
 
@@ -94,11 +94,11 @@ Interface pública de um ecossistema independente de engenharia. NAVI-OS é a id
 
 ## Ecossistema de engenharia
 
-<a href="https://github.com/Neguchads/github-homepage/tree/main/docs/explore"><img src="assets/ecosystem.pt-BR.svg" width="100%" alt="Mapa dos projetos públicos Neguchads" /></a>
+<a href="https://github.com/Neguchads/navi-githomepage/tree/main/docs/explore"><img src="assets/ecosystem.pt-BR.svg" width="100%" alt="Mapa dos projetos públicos Neguchads" /></a>
 
-[NAVI Graphify](https://github.com/Neguchads/navi-graphify) fornece o catálogo público versionado. [GitHub Homepage](https://github.com/Neguchads/github-homepage) gera o mapa e o explorador offline. Grafos privados e memória de agentes permanecem locais.
+[NAVI Graphify](https://github.com/Neguchads/navi-graphify) fornece o catálogo público versionado. [NAVI GitHomepage](https://github.com/Neguchads/navi-githomepage) gera o mapa e o explorador offline. Grafos privados e memória de agentes permanecem locais.
 
-[Abrir explorador e baixar HTML](https://github.com/Neguchads/github-homepage/tree/main/docs/explore) · [Arquitetura e privacidade](docs/ECOSYSTEM.md)
+[Abrir explorador e baixar HTML](https://github.com/Neguchads/navi-githomepage/tree/main/docs/explore) · [Arquitetura e privacidade](docs/ECOSYSTEM.md)
 
 ## Tecnologias
 
