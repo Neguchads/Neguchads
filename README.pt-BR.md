@@ -6,12 +6,37 @@
   <strong>Engenharia de jogos · Inteligência artificial · Ferramentas para desenvolvedores</strong>
 </p>
 <p align="center">
-  <a href="#projetos-em-destaque">Projetos</a> · <a href="#tecnologias">Tecnologias</a> · <a href="#como-desenvolvo">Engenharia</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositórios</a> · <a href="#github-analytics">GitHub Analytics</a>
+  <a href="#navi-os--command-center">NAVI-OS</a> · <a href="#navi-engineering-universe">Universe</a> · <a href="#projetos-em-destaque">Projetos</a> · <a href="#tecnologias">Tecnologias</a> · <a href="#github-analytics">Analytics</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositórios</a>
 </p>
 <p align="center"><a href="README.md"><img src="assets/language-en.svg" alt="Read in English" height="32" /></a></p>
 
 
 Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação estática de jogos. Meu foco é transformar problemas técnicos em soluções reproduzíveis, com documentação clara, automação e testes verificáveis.
+
+## NAVI-OS / Command Center
+
+Interface pública de um ecossistema independente de engenharia. NAVI-OS é a identidade integradora; a base executável de engenharia está no NAVI Core. Esta é uma prévia de desenvolvimento, não uma distribuição de sistema operacional ou certificação de produção.
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/navi-command.pt-BR.light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/navi-command.pt-BR.svg" />
+  <img src="assets/navi-command.pt-BR.svg" width="100%" alt="Arquitetura NAVI-OS: Core, NEF, Interface de Agentes, Graphify, Homepage, Abyss" />
+</picture>
+
+| Módulo | Responsabilidade |
+| :--- | :--- |
+| **[NAVI Core](https://github.com/Neguchads/navi-core)** | Contratos de projetos, CLI e gates reutilizáveis de verificação. |
+| **[NEF](https://github.com/Neguchads/navi-core/blob/main/docs/NEF.md)** | Perfis de arquitetura, políticas de referência, roadmap, handoff e aprendizado revisado. |
+| **[Universal Agent Interface](https://github.com/Neguchads/navi-core/blob/main/docs/UNIVERSAL_AGENT_INTERFACE.md)** | Contexto portável e handoff estruturado; MCP opcional. |
+| **[NAVI Graphify](https://github.com/Neguchads/navi-graphify)** | Catálogo público versionado e ferramentas de grafo de conhecimento. |
+| **[GitHub Homepage](https://github.com/Neguchads/github-homepage)** | Identidade visual, cards e renderizador do explorador interativo. |
+| **[NAVI Abyss](https://github.com/Neguchads/navyv-abyss)** | Mundo interativo opcional. |
+
+**Fluxo de engenharia:** Esclarecer → Planejar → Implementar → Verificar → Registrar evidências → Handoff.
+
+[Arquitetura](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md) · [Handoff](docs/HANDOFF.md) · [Política de verificação](docs/NAVI_PILOT.md) · [Execuções do CI Core](https://github.com/Neguchads/navi-core/actions/workflows/ci.yml)
+
+<sub>O diagrama descreve funções dos componentes, não saúde em tempo real ou conformidade. O snapshot público abaixo contém métricas datadas; memória privada dos agentes não integra o catálogo público.</sub>
 
 ## NAVI Engineering Universe
 
