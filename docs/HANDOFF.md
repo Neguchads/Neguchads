@@ -24,3 +24,6 @@ The earlier deployment succeeded in run 45615633806. Repin merged Graphify #8/#9
 
 ## Security and hosted verification follow-up
 Repin Graphify #10 (non-loopback auth and blocking medium/high Bandit), Abyss #7 (catalog validation), and Homepage #11 (snapshot mutation regressions). The external hosted check compares four exact artifact files via anonymous fixed HTTPS URLs with bounded retry; a deploy success alone is insufficient. The check is not a screenshot or full browser review. All upstream PR gates passed; verify current main and hosted deployment.
+
+## Pages metadata race follow-up
+Run 45619875941 published the updated snapshot, but deploy-pages listed one artifact even after the REST metadata gate found the correct named Pages artifact. Move Pages packaging into the successful build job, before the separate repository publish job. Pass the exact build-produced name through job outputs, retain the visibility gate and hosted SHA verification. This avoids immediate post-upload deployment lookup; verify a new main run before claiming resolution. Do not bypass the clean-checkout or deployment integrity gates.
