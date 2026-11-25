@@ -11,7 +11,7 @@ def main():
     a=p.parse_args()
     out=a.out.resolve()
     pins=json.loads((ROOT/"docs/universe-pins.json").read_text())
-    if set(pins)!={"navi-graphify","github-homepage","navyv-abyss"} or not all(re.fullmatch(r"[a-f0-9]{40}",s) for s in pins.values()): raise ValueError("Invalid pins")
+    if set(pins)!={"navi-graphify","navi-githomepage","navi-abyss"} or not all(re.fullmatch(r"[a-f0-9]{40}",s) for s in pins.values()): raise ValueError("Invalid pins")
     with tempfile.TemporaryDirectory(prefix="navi-build-") as tmp:
         t=pathlib.Path(tmp)
         for repo,sha in pins.items():
@@ -38,9 +38,9 @@ def main():
         public_data=json.loads(snapshot.read_text(encoding="utf-8"))
         public_data["core_status"]=fetch_core_status()
         snapshot.write_text(json.dumps(public_data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-        run("node",str(t/"github-homepage/scripts/build-universe.mjs"),str(snapshot),str(t/"navyv-abyss"),str(ROOT),str(out))
-        run("node","--check",str(t/"github-homepage/docs/universe/universe.js"))
+        run("node",str(t/"navi-githomepage/scripts/build-universe.mjs"),str(snapshot),str(t/"navi-abyss"),str(ROOT),str(out))
+        run("node","--check",str(t/"navi-githomepage/docs/universe/universe.js"))
         import xml.etree.ElementTree as ET
         for f in out.glob("*.svg"): ET.parse(f)
-        assert (out/"index.html").is_file() and (out/"snapshot.json").is_file()
+        assert (out/"index.html").is_file() and (out/"snapshot.json").is_file() and (out/"cosmic.html").is_file() and (out/"abyss.html").is_file()
 if __name__=="__main__": main()

@@ -43,6 +43,7 @@ class PublishTests(unittest.TestCase):
         pub.publish(self.work,self.bundle)
         self.assertEqual((self.work/"README.md").read_text(),"new remote change")
         self.assertTrue((self.work/"docs/universe/index.html").exists())
+        self.assertTrue((self.work/"docs/universe/cosmic.html").exists())
         head=pub.git(self.work,"rev-parse","HEAD",capture=True).stdout
         pub.publish(self.work,self.bundle)
         self.assertEqual(pub.git(self.work,"rev-parse","HEAD",capture=True).stdout,head)

@@ -11,7 +11,7 @@ import time
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FEATURED = ("chad-recomp", "cdos-nintendods-recomp", "ccod-xbox-recomp",
             "csotn-saturn-recomp", "starlight-bi", "spec-to-proof")
-FILES = ("index.html", "abyss.html", "ABYSS-LICENSE.txt", "snapshot.json",
+FILES = ("index.html", "cosmic.html", "abyss.html", "ABYSS-LICENSE.txt", "snapshot.json",
          "universe.en.svg", "universe.pt-BR.svg", "assets/banner.svg")
 INPUTS = ("scripts", "docs/universe-pins.json", "docs/universe/snapshot.json",
           "assets/banner.svg", "assets/projects", ".github/workflows/navi-universe.yml")
