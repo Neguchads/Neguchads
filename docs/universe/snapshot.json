@@ -4,10 +4,10 @@
   "owner": "Neguchads",
   "date": "2026-11-25",
   "sources": {
-    "navi-graphify": "8f41b96f2a7ad6c9c286fc4ec1dc9ff6644fcac9",
-    "navi-githomepage": "16860c4a75ac83a3511b9fdb715ead04cfb0b132",
-    "navi-abyss": "554ec872852c86d5ef638da2651aab0bd7bf5186",
-    "Neguchads": "e096dcbc8e04d25d9cd12a77f7774138c2429646"
+    "navi-graphify": "f2c1848bc05d678cc29c5bc097ee96c26ee72e3f",
+    "navi-githomepage": "8ec22680ecab807f8fdd7e2fe292772d89482b06",
+    "navi-abyss": "86233e72d7603ae7526be9f1c9cab4e462c1dfcf",
+    "Neguchads": "c8cd60ecb57ce59ead8d8c31f192f90c83c496a0"
   },
   "totals": {
     "public_repositories": 50,
@@ -209,7 +209,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-25T12:47:56Z",
+          "pushed_at": "2026-11-25T13:02:48Z",
           "fork": true,
           "archived": false,
           "title": "NAVI Graphify"
@@ -220,7 +220,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-25T12:49:46Z",
+          "pushed_at": "2026-11-25T13:04:20Z",
           "fork": false,
           "archived": false,
           "title": "Neguchads Profile"
@@ -232,7 +232,7 @@
           "forks": 0,
           "open_items": 2,
           "language": "Python",
-          "pushed_at": "2026-11-25T12:46:41Z",
+          "pushed_at": "2026-11-25T13:00:11Z",
           "fork": false,
           "archived": false
         },
@@ -243,7 +243,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "JavaScript",
-          "pushed_at": "2026-11-25T12:46:55Z",
+          "pushed_at": "2026-11-25T13:02:35Z",
           "fork": true,
           "archived": false
         },
@@ -254,7 +254,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "JavaScript",
-          "pushed_at": "2026-11-25T12:45:48Z",
+          "pushed_at": "2026-11-25T13:02:30Z",
           "fork": true,
           "archived": false
         }
@@ -298,13 +298,13 @@
       "schema_version": 1,
       "scope": "public-code-only",
       "repository": "Neguchads",
-      "commit": "e096dcbc8e04d25d9cd12a77f7774138c2429646",
-      "nodes": 193,
-      "edges": 314,
+      "commit": "c8cd60ecb57ce59ead8d8c31f192f90c83c496a0",
+      "nodes": 214,
+      "edges": 352,
       "communities": 10,
       "confidence": {
-        "EXTRACTED": 309,
-        "INFERRED": 5,
+        "EXTRACTED": 346,
+        "INFERRED": 6,
         "OTHER": 0
       }
     }
@@ -317,11 +317,5 @@
     "chad-recomp",
     "ccod-xbox-recomp"
   ],
-  "core_status": {
-    "scope": "public-core-ci",
-    "repository": "Neguchads/navi-core",
-    "commit": "a759bf8c678563aef51090a02b69e9fdb8e7aec2",
-    "run_id": 45616976791,
-    "state": "success"
-  }
+  "core_status": null
 }
