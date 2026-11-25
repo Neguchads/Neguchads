@@ -93,6 +93,7 @@ jobs:
       pages: write
       id-token: write
       contents: read
+      actions: read
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -105,6 +106,26 @@ jobs:
         with:
           path: site
           name: github-pages-${{ github.run_attempt }}
+      - name: Wait for Pages artifact metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          ARTIFACT_NAME: github-pages-${{ github.run_attempt }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in {1..12}; do
+            if gh api --paginate "repos/$REPO/actions/runs/$RUN_ID/artifacts?per_page=100" \
+              --jq '.artifacts[] | select(.expired == false) | .name' |
+              grep -Fx "$ARTIFACT_NAME"; then
+              echo "Pages artifact is visible through the REST API"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "::error::Uploaded Pages artifact did not become visible through the API"
+          exit 1
       - uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
         id: deploy
         with:
