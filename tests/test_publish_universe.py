@@ -52,3 +52,26 @@ class PublishTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError,"changed"):
             pub.publish(self.work,self.bundle)
         self.assertFalse((self.work/"docs/universe/index.html").exists())
+
+    def test_refuses_untracked_non_generated_content(self):
+        (self.work/"unreviewed.txt").write_text("do not overwrite")
+        with self.assertRaisesRegex(RuntimeError,"clean checkout"):
+            pub.publish(self.work,self.bundle)
+        self.assertTrue((self.work/"unreviewed.txt").is_file())
+        self.assertFalse((self.work/"docs/universe/index.html").exists())
+
+    def test_direct_publisher_import_does_not_dirty_checkout(self):
+        import shutil
+        import sys
+        source = pathlib.Path(pub.__file__).resolve().parent
+        scripts = self.work/"scripts"
+        scripts.mkdir()
+        for name in ("publish_universe.py","showcase.py"):
+            shutil.copyfile(source/name,scripts/name)
+        docs=self.work/"docs"
+        docs.mkdir()
+        shutil.copyfile(source.parent/"docs/showcase.json",docs/"showcase.json")
+        pub.git(self.work,"add",".")
+        pub.git(self.work,"commit","-m","publisher fixture")
+        subprocess.run([sys.executable,str(scripts/"publish_universe.py"),"--help"],check=True,capture_output=True)
+        self.assertEqual(pub.git(self.work,"status","--porcelain",capture=True).stdout,"")
