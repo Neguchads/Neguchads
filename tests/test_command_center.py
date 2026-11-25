@@ -19,7 +19,8 @@ class CommandCenterTests(unittest.TestCase):
             self.assertIn(f"assets/navi-command.{locale}.light.svg", body)
             self.assertIn(f"assets/navi-command.{locale}.svg", body)
     def test_engineering_first_showcase(self):
-        expected = ["navi-core", "spec-to-proof", "codex-config-universal", "navi-graphify", "chad-recomp", "ccod-xbox-recomp"]
+        from scripts.showcase import load
+        expected = list(load())
         for name, heading in (("README.md", "## Featured projects"), ("README.pt-BR.md", "## Projetos em destaque")):
             body = (ROOT / name).read_text(encoding="utf-8")
             showcase = body.split(heading, 1)[1].split("<details>", 1)[0]

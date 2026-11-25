@@ -2,6 +2,8 @@
 """Build the public NAVI bundle with reviewed, pinned upstream revisions."""
 import argparse,json,pathlib,re,subprocess,tempfile,os
 from core_status import fetch_core_status
+from showcase import apply as apply_showcase
+from refresh_public_cards import fetch as fetch_public_repo
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def run(*args,**kw): subprocess.run(args,check=True,**kw)
 def main():
@@ -36,6 +38,7 @@ def main():
                 print("::warning::Graphify scan unavailable; no AST metrics fabricated.")
         run(*cmd)
         public_data=json.loads(snapshot.read_text(encoding="utf-8"))
+        apply_showcase(public_data, fetch_public_repo)
         public_data["core_status"]=fetch_core_status()
         snapshot.write_text(json.dumps(public_data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         run("node",str(t/"navi-githomepage/scripts/build-universe.mjs"),str(snapshot),str(t/"navi-abyss"),str(ROOT),str(out))

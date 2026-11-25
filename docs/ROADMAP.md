@@ -3,11 +3,17 @@
 | Milestone | Acceptance | State |
 | --- | --- | --- |
 | NAVI pilot | Existing manifest and pinned read-only gate | Existing |
-| Command Center preview | Bilingual README, four local SVG variants, navigation, NEF references | Proposed in this change |
-| Engineering-first showcase | Five engineering tools/frameworks and CCOD only as a featured game; full directory retained | Proposed in this change |
-| Verification | Existing unit suite and new profile checks pass; visual review in both themes | Pending CI and review |
-| Publication | Merge reviewed change, inspect public profile | Pending |
-| Dynamic status | Reuse allowlisted, dated public Core CI snapshot; no private data | Existing in Universe pipeline; future refinement optional |
-| Shared visual standard | Review reusable artwork contract with Homepage and Abyss | Planned, outside this change |
+| Command Center | Bilingual README, four local SVG variants, navigation, NEF references | Published in PR #9 |
+| Engineering-first showcase | Five engineering tools/frameworks and CCOD only as a featured game | Published in PR #9 |
+| Verification | Profile cards and NAVI pilot passed for PR #9 | CI passed; visual review pending |
+| Publication | PR #9 merged at 05a83c8950a7d5dfcc86fab71d4098a458eb1e40 | Published |
+| Canonical showcase and rename compatibility | README and Universe share selection; canonical fetch URLs and links | Proposed; CI and deployment pending |
+| Upstream convergence | Review and repin NAVI GitHomepage #7, NAVI Abyss #4 and NAVI Graphify #6 after merge | Pending upstream |
+| Dynamic status | Reuse dated public CI evidence | Existing; further health indicators planned |
+| Shared visual standard | Review reusable artwork contract with Homepage and Abyss | Planned |
 
-Do not change the Core pin, Pages configuration or automated publisher as part of a visual-only change. See [handoff](HANDOFF.md).
+Evidence: [PR #9](https://github.com/Neguchads/Neguchads/pull/9), [Profile cards](https://github.com/Neguchads/Neguchads/actions/runs/45603429639), [NAVI pilot](https://github.com/Neguchads/Neguchads/actions/runs/45603430144).
+
+See [handoff](HANDOFF.md).
+
+PR #11 prepares the coordinated canonical source-key migration and cosmic publication; pending upstream integration and CI.

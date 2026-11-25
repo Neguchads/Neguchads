@@ -27,7 +27,7 @@ A public control surface for an independent engineering ecosystem. NAVI-OS is th
 | **[NEF](https://github.com/Neguchads/navi-core/blob/main/docs/NEF.md)** | Architecture profiles, reference policies, roadmap, handoff and reviewed learning. |
 | **[Universal Agent Interface](https://github.com/Neguchads/navi-core/blob/main/docs/UNIVERSAL_AGENT_INTERFACE.md)** | Portable context and structured handoff; optional MCP. |
 | **[NAVI Graphify](https://github.com/Neguchads/navi-graphify)** | Versioned public project catalog and knowledge graph tooling. |
-| **[NAVI GitHub Homepage](https://github.com/Neguchads/navi-githomepage)** | Brand, cards and interactive explorer renderer. |
+| **[NAVI GitHomepage](https://github.com/Neguchads/navi-githomepage)** | Brand, cards and interactive explorer renderer. |
 | **[NAVI Abyss](https://github.com/Neguchads/navi-abyss)** | Cosmic ocean and repository-star navigation. |
 
 **Engineering workflow:** Clarify → Plan → Build → Verify → Record evidence → Handoff.
@@ -94,7 +94,7 @@ A public control surface for an independent engineering ecosystem. NAVI-OS is th
 
 <a href="https://github.com/Neguchads/navi-githomepage/tree/main/docs/explore"><img src="assets/ecosystem.en.svg" width="100%" alt="Neguchads public project map" /></a>
 
-[NAVI Graphify](https://github.com/Neguchads/navi-graphify) provides the versioned public catalog. [NAVI GitHub Homepage](https://github.com/Neguchads/navi-githomepage) generates the map and offline explorer. Private graphs and agent memory remain local.
+[NAVI Graphify](https://github.com/Neguchads/navi-graphify) provides the versioned public catalog. [NAVI GitHomepage](https://github.com/Neguchads/navi-githomepage) generates the map and offline explorer. Private graphs and agent memory remain local.
 
 [Explore and download offline HTML](https://github.com/Neguchads/navi-githomepage/tree/main/docs/explore) · [Architecture and privacy](docs/ECOSYSTEM.md)
 

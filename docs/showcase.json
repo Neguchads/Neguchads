@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "featured": [
+    "navi-core",
+    "spec-to-proof",
+    "codex-config-universal",
+    "navi-graphify",
+    "chad-recomp",
+    "ccod-xbox-recomp"
+  ],
+  "static_role_cards": [
+    "navi-core",
+    "codex-config-universal",
+    "navi-graphify"
+  ]
+}

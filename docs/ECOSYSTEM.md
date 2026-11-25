@@ -1,7 +1,7 @@
 # Neguchads engineering ecosystem
 
 - [NAVI Graphify](https://github.com/Neguchads/navi-graphify/tree/v8/integrations/portfolio): canonical versioned public catalog, local Graphify AST exporter and numeric summary.
-- [NAVI GitHub Homepage](https://github.com/Neguchads/navi-githomepage/tree/main/docs/explore): consumes a pinned catalog, generates offline interactive HTML and bilingual SVGs.
+- [NAVI GitHomepage](https://github.com/Neguchads/navi-githomepage/tree/main/docs/explore): consumes a pinned catalog, generates offline interactive HTML and bilingual SVGs.
 - This profile: copies the generated SVGs from the renderer and links to both repositories.
 
 ## Data boundary
