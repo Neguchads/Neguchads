@@ -6,9 +6,12 @@ import pathlib
 import re
 import shutil
 import subprocess
+import sys
 import time
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+# Direct CLI execution must not dirty the checkout before its integrity gate.
+sys.dont_write_bytecode = True
 try:
     from .showcase import load
 except ImportError:  # direct CLI execution
@@ -73,7 +76,7 @@ def publish(root, bundle, attempts=4):
     root, bundle = root.resolve(), bundle.resolve()
     source, paths, featured = validate(bundle)
     if git(root, "status", "--porcelain", capture=True).stdout:
-        raise RuntimeError("Publication requires a clean checkout")
+        raise RuntimeError("Publication requires a clean checkout; inspect git status before retrying")
     git(root, "config", "user.name", "github-actions[bot]")
     git(root, "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
     for attempt in range(attempts):

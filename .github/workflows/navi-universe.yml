@@ -83,7 +83,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh auth setup-git
-          python3 scripts/publish_universe.py /tmp/navi-universe
+          python3 -B scripts/publish_universe.py /tmp/navi-universe
   pages:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.NAVI_ENABLE_PAGES == 'true'
     needs: publish
