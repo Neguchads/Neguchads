@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="124" viewBox="0 0 440 124" role="img" aria-labelledby="title desc">
+<title id="title">NAVI Graphify</title><desc id="desc">Knowledge graphs / public catalog. INTEGRATED FORK. Static engineering role card, not a live metric.</desc>
+<style>
+.surface{fill:#0B111B;stroke:#34516A}.title{fill:#EAF4FF}.muted{fill:#A9C3D9}.rule{stroke:#304359}.accent{fill:#45D6FF}.icon{fill:none;stroke:#00B3FF}
+@media (prefers-color-scheme:light){.surface{fill:#FFFFFF;stroke:#C5D6E3}.title{fill:#152B40}.muted{fill:#47647C}.rule{stroke:#D7E2EB}.accent{fill:#007EAF}.icon{stroke:#007EAF}}
+</style>
+<rect class="surface" x="1" y="1" width="438" height="122" rx="12"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<path class="icon" d="M18 20h14v14H18zM21 16v4m8-4v4m-8 14v4m8-4v4m-15-15h4m-4 8h4m14-8h4m-4 8h4" stroke-width="1.6" stroke-linejoin="round"/>
+<text class="title" x="42" y="33" font-size="18" font-weight="700">NAVI Graphify</text>
+<text class="muted" x="18" y="59" font-size="13.5">Knowledge graphs / public catalog</text>
+<path class="rule" d="M18 76H422"/>
+<circle class="accent" cx="23" cy="99" r="4.5"/><text class="muted" x="34" y="104" font-size="13">INTEGRATED FORK</text>
+<text class="accent" x="422" y="104" text-anchor="end" font-size="12" letter-spacing="1">NAVI</text>
+</g></svg>

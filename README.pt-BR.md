@@ -46,14 +46,23 @@ Interface pública de um ecossistema independente de engenharia. NAVI-OS é a id
 
 ## Projetos em destaque
 
+**Ferramentas e frameworks de engenharia** — infraestrutura de desenvolvimento, verificação e conhecimento.
+
 <p align="center">
-<a href="https://github.com/Neguchads/chad-recomp"><img src="assets/projects/chad-recomp.svg" width="48%" alt="Chad Standard Recomp" /></a>
-<a href="https://github.com/Neguchads/cdos-nintendods-recomp"><img src="assets/projects/cdos-nintendods-recomp.svg" width="48%" alt="Dawn of Sorrow Recompiled" /></a>
-<a href="https://github.com/Neguchads/ccod-xbox-recomp"><img src="assets/projects/ccod-xbox-recomp.svg" width="48%" alt="Curse of Darkness Recomp" /></a>
-<a href="https://github.com/Neguchads/csotn-saturn-recomp"><img src="assets/projects/csotn-saturn-recomp.svg" width="48%" alt="Symphony of the Night Recomp" /></a>
-<a href="https://github.com/Neguchads/starlight-bi"><img src="assets/projects/starlight-bi.svg" width="48%" alt="Starlight BI" /></a>
+<a href="https://github.com/Neguchads/navi-core"><img src="assets/projects/navi-core.svg" width="48%" alt="NAVI Engineering Core" /></a>
 <a href="https://github.com/Neguchads/spec-to-proof"><img src="assets/projects/spec-to-proof.svg" width="48%" alt="Spec-to-Proof" /></a>
+<a href="https://github.com/Neguchads/codex-config-universal"><img src="assets/projects/codex-config-universal.svg" width="48%" alt="Codex Universal Config" /></a>
+<a href="https://github.com/Neguchads/navi-graphify"><img src="assets/projects/navi-graphify.svg" width="48%" alt="NAVI Graphify (integrated fork)" /></a>
+<a href="https://github.com/Neguchads/chad-recomp"><img src="assets/projects/chad-recomp.svg" width="48%" alt="Chad Standard Recomp — engineering framework" /></a>
 </p>
+
+**Projeto de recompilação em destaque**
+
+<p align="center">
+<a href="https://github.com/Neguchads/ccod-xbox-recomp"><img src="assets/projects/ccod-xbox-recomp.svg" width="48%" alt="Curse of Darkness Recomp" /></a>
+</p>
+
+<sub>Chad Standard Recomp é um framework, não um jogo. NAVI Graphify é um fork integrado. Os demais jogos continuam no catálogo completo.</sub>
 
 <details>
 <summary><strong>Catálogo completo dos projetos</strong></summary>

@@ -18,6 +18,18 @@ class CommandCenterTests(unittest.TestCase):
                 self.assertTrue((ROOT / path).is_file(), path)
             self.assertIn(f"assets/navi-command.{locale}.light.svg", body)
             self.assertIn(f"assets/navi-command.{locale}.svg", body)
+    def test_engineering_first_showcase(self):
+        expected = ["navi-core", "spec-to-proof", "codex-config-universal", "navi-graphify", "chad-recomp", "ccod-xbox-recomp"]
+        for name, heading in (("README.md", "## Featured projects"), ("README.pt-BR.md", "## Projetos em destaque")):
+            body = (ROOT / name).read_text(encoding="utf-8")
+            showcase = body.split(heading, 1)[1].split("<details>", 1)[0]
+            self.assertEqual(re.findall(r'assets/projects/([a-z0-9-]+)\.svg', showcase), expected)
+            self.assertIn("fork", showcase)
+            for slug in expected:
+                ET.parse(ROOT / "assets" / "projects" / (slug + ".svg"))
+            self.assertIn("cdos-nintendods-recomp", body.split("<details>", 1)[1])
+            self.assertIn("csotn-saturn-recomp", body.split("<details>", 1)[1])
+
     def test_safe_static_artwork(self):
         ns = "{http://www.w3.org/2000/svg}"
         for locale in ("en", "pt-BR"):

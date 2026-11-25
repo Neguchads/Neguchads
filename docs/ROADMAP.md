@@ -4,6 +4,7 @@
 | --- | --- | --- |
 | NAVI pilot | Existing manifest and pinned read-only gate | Existing |
 | Command Center preview | Bilingual README, four local SVG variants, navigation, NEF references | Proposed in this change |
+| Engineering-first showcase | Five engineering tools/frameworks and CCOD only as a featured game; full directory retained | Proposed in this change |
 | Verification | Existing unit suite and new profile checks pass; visual review in both themes | Pending CI and review |
 | Publication | Merge reviewed change, inspect public profile | Pending |
 | Dynamic status | Reuse allowlisted, dated public Core CI snapshot; no private data | Existing in Universe pipeline; future refinement optional |

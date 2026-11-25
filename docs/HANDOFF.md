@@ -2,7 +2,7 @@
 
 Scope: NAVI-OS public profile Command Center, branch `feat/navi-command-center`.
 
-Implemented in this change: bilingual navigation and component map, local light/dark artwork, consolidated architecture, roadmap and handoff, regression tests. Existing public metrics, project cards, brand logo and CI configuration retained.
+Implemented in this change: bilingual navigation and component map, local light/dark artwork, consolidated architecture, roadmap and handoff, regression tests. Existing public metrics, brand logo and CI configuration retained. README showcase now prioritizes five engineering tools/frameworks and only CCOD as a featured game. Three new static role cards do not invent statistics. Older cards remain available for the independent generated Universe bundle.
 
 Acceptance: static source review and remote CI/visual review still required. No claims of execution of NAVI CLI, authenticated agent integration or production certification. No secrets or private memory included.
 
