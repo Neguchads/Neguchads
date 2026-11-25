@@ -18,3 +18,6 @@ PR #11 merged at 69fe383; main build and 16 tests passed (real AST extraction: 1
 
 ## Pages artifact visibility
 Snapshot publication succeeded at 39b60ca. Pages attempts 1 and 2 uploaded their named artifacts but deploy-pages could not immediately list them. Add a bounded metadata visibility gate with read-only Actions access and retain the per-attempt artifact names. Verify a fresh main run; do not bypass artifact validation or declare hosted deployment until it succeeds.
+
+## Coordinated maintenance
+The earlier deployment succeeded in run 45615633806. Repin merged Graphify #8/#9, Abyss #6 and GitHomepage #10; refresh Core pilot to the already verified 0c25dfc revision. Graphify security gate and Python 3.11–3.14 matrix passed; Abyss and Homepage passed browser/functional and dependency checks; Core #32 updated CI dependencies after all six gates. Verify fresh profile CI and public deployment. No administrative permission changes or automatic release of upstream graphifyy.
