@@ -7,14 +7,14 @@
     "navi-graphify": "f2c1848bc05d678cc29c5bc097ee96c26ee72e3f",
     "navi-githomepage": "8ec22680ecab807f8fdd7e2fe292772d89482b06",
     "navi-abyss": "86233e72d7603ae7526be9f1c9cab4e462c1dfcf",
-    "Neguchads": "c8cd60ecb57ce59ead8d8c31f192f90c83c496a0"
+    "Neguchads": "e88ba6bfc902f13144ae607ac457ac83267c1bb1"
   },
   "totals": {
     "public_repositories": 50,
     "active_originals": 11,
     "stars": 36,
     "forks": 1,
-    "open_items": 40,
+    "open_items": 39,
     "followers": 6
   },
   "languages": {
@@ -38,7 +38,7 @@
       "active_originals": 11,
       "stars": 36,
       "forks": 1,
-      "open_items": 40,
+      "open_items": 39,
       "followers": 6
     }
   ],
@@ -220,7 +220,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-25T13:04:20Z",
+          "pushed_at": "2026-11-25T13:07:40Z",
           "fork": false,
           "archived": false,
           "title": "Neguchads Profile"
@@ -230,9 +230,9 @@
           "title": "NAVI Engineering Core",
           "stars": 0,
           "forks": 0,
-          "open_items": 2,
+          "open_items": 1,
           "language": "Python",
-          "pushed_at": "2026-11-25T13:00:11Z",
+          "pushed_at": "2026-11-25T13:05:23Z",
           "fork": false,
           "archived": false
         },
@@ -298,12 +298,12 @@
       "schema_version": 1,
       "scope": "public-code-only",
       "repository": "Neguchads",
-      "commit": "c8cd60ecb57ce59ead8d8c31f192f90c83c496a0",
-      "nodes": 214,
-      "edges": 352,
-      "communities": 10,
+      "commit": "e88ba6bfc902f13144ae607ac457ac83267c1bb1",
+      "nodes": 217,
+      "edges": 356,
+      "communities": 11,
       "confidence": {
-        "EXTRACTED": 346,
+        "EXTRACTED": 350,
         "INFERRED": 6,
         "OTHER": 0
       }
@@ -317,5 +317,11 @@
     "chad-recomp",
     "ccod-xbox-recomp"
   ],
-  "core_status": null
+  "core_status": {
+    "scope": "public-core-ci",
+    "repository": "Neguchads/navi-core",
+    "commit": "27bda510a2fd63b6736f68d22a1c168283ebc67b",
+    "run_id": 45620056262,
+    "state": "success"
+  }
 }
