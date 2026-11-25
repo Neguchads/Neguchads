@@ -2,19 +2,19 @@
   "schema_version": 1,
   "scope": "public-only",
   "owner": "Neguchads",
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "sources": {
-    "navi-graphify": "bfc064c3519ece7efdc66eab23bf089043ae830b",
-    "github-homepage": "19f9a8cb6aa09d7219746688b2a2b4c6420f904e",
-    "navyv-abyss": "99b78bdbd48a0aa264f28b1565e022b1a4c89c56",
-    "Neguchads": "2233031c432574fe2d123b5de7f8a57244d4a4a3"
+    "navi-graphify": "aa0a4faf7f833701751a851dad790637a7024d8e",
+    "navi-githomepage": "db7b987a8aa505e6e439bf8fbead2f4340488e97",
+    "navi-abyss": "5d05a530d45660f27c71a6434759c8598bdf6e20",
+    "Neguchads": "d420953d2fca289280f6efb5be0a27a3150fbcb7"
   },
   "totals": {
     "public_repositories": 50,
     "active_originals": 11,
     "stars": 36,
     "forks": 1,
-    "open_items": 41,
+    "open_items": 42,
     "followers": 6
   },
   "languages": {
@@ -30,6 +30,15 @@
       "stars": 36,
       "forks": 1,
       "open_items": 41,
+      "followers": 6
+    },
+    {
+      "date": "2026-11-25",
+      "public_repositories": 50,
+      "active_originals": 11,
+      "stars": 36,
+      "forks": 1,
+      "open_items": 42,
       "followers": 6
     }
   ],
@@ -51,7 +60,7 @@
           "forks": 0,
           "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-24T11:32:28Z",
+          "pushed_at": "2026-11-25T11:16:39Z",
           "fork": false,
           "archived": false,
           "title": "Chad Standard Recomp"
@@ -62,7 +71,7 @@
           "forks": 0,
           "open_items": 3,
           "language": "Python",
-          "pushed_at": "2026-11-24T17:57:31Z",
+          "pushed_at": "2026-11-25T11:33:31Z",
           "fork": false,
           "archived": false,
           "title": "Dawn of Sorrow"
@@ -178,7 +187,7 @@
           "forks": 0,
           "open_items": 0,
           "language": null,
-          "pushed_at": "2026-11-24T11:17:17Z",
+          "pushed_at": "2026-11-25T03:31:32Z",
           "fork": false,
           "archived": false,
           "title": "Spec-to-Proof"
@@ -189,29 +198,18 @@
           "forks": 0,
           "open_items": 2,
           "language": "Python",
-          "pushed_at": "2026-11-24T11:43:53Z",
+          "pushed_at": "2026-11-25T03:31:22Z",
           "fork": false,
           "archived": false,
           "title": "Codex Universal Config"
         },
         {
-          "slug": "github-homepage",
-          "stars": 0,
-          "forks": 0,
-          "open_items": 0,
-          "language": "JavaScript",
-          "pushed_at": "2026-11-24T18:07:29Z",
-          "fork": true,
-          "archived": false,
-          "title": "GitHub Homepage"
-        },
-        {
           "slug": "navi-graphify",
           "stars": 0,
           "forks": 0,
-          "open_items": 1,
+          "open_items": 2,
           "language": "Python",
-          "pushed_at": "2026-11-24T15:36:10Z",
+          "pushed_at": "2026-11-25T11:50:16Z",
           "fork": true,
           "archived": false,
           "title": "NAVI Graphify"
@@ -222,21 +220,43 @@
           "forks": 0,
           "open_items": 0,
           "language": "Python",
-          "pushed_at": "2026-11-24T18:08:04Z",
+          "pushed_at": "2026-11-25T12:34:50Z",
           "fork": false,
           "archived": false,
           "title": "Neguchads Profile"
         },
         {
-          "slug": "navyv-abyss",
+          "slug": "navi-core",
+          "title": "NAVI Engineering Core",
+          "stars": 0,
+          "forks": 0,
+          "open_items": 4,
+          "language": "Python",
+          "pushed_at": "2026-11-25T11:46:39Z",
+          "fork": false,
+          "archived": false
+        },
+        {
+          "slug": "navi-githomepage",
+          "title": "NAVI GitHomepage",
+          "stars": 0,
+          "forks": 0,
+          "open_items": 1,
+          "language": "JavaScript",
+          "pushed_at": "2026-11-25T12:34:36Z",
+          "fork": true,
+          "archived": false
+        },
+        {
+          "slug": "navi-abyss",
+          "title": "NAVI Abyss",
           "stars": 0,
           "forks": 0,
           "open_items": 0,
           "language": "JavaScript",
-          "pushed_at": "2026-11-24T15:36:01Z",
+          "pushed_at": "2026-11-25T12:03:42Z",
           "fork": true,
-          "archived": false,
-          "title": "Navyv Abyss"
+          "archived": false
         }
       ]
     }
@@ -244,11 +264,11 @@
   "integrations": [
     {
       "source": "navi-graphify",
-      "target": "github-homepage",
+      "target": "navi-githomepage",
       "kind": "catalog-provider"
     },
     {
-      "source": "github-homepage",
+      "source": "navi-githomepage",
       "target": "Neguchads",
       "kind": "visualization-provider"
     },
@@ -258,14 +278,19 @@
       "kind": "project-discovery"
     },
     {
-      "source": "navyv-abyss",
-      "target": "github-homepage",
+      "source": "navi-abyss",
+      "target": "navi-githomepage",
       "kind": "immersive-theme-provider"
     },
     {
       "source": "Neguchads",
-      "target": "navyv-abyss",
+      "target": "navi-abyss",
       "kind": "public-experience-publisher"
+    },
+    {
+      "source": "navi-core",
+      "target": "navi-abyss",
+      "kind": "verification-provider"
     }
   ],
   "structural": {
@@ -273,30 +298,24 @@
       "schema_version": 1,
       "scope": "public-code-only",
       "repository": "Neguchads",
-      "commit": "2233031c432574fe2d123b5de7f8a57244d4a4a3",
-      "nodes": 147,
-      "edges": 237,
-      "communities": 8,
+      "commit": "d420953d2fca289280f6efb5be0a27a3150fbcb7",
+      "nodes": 185,
+      "edges": 303,
+      "communities": 10,
       "confidence": {
-        "EXTRACTED": 233,
-        "INFERRED": 4,
+        "EXTRACTED": 298,
+        "INFERRED": 5,
         "OTHER": 0
       }
     }
   },
   "featured": [
+    "navi-core",
+    "spec-to-proof",
+    "codex-config-universal",
+    "navi-graphify",
     "chad-recomp",
-    "cdos-nintendods-recomp",
-    "ccod-xbox-recomp",
-    "csotn-saturn-recomp",
-    "starlight-bi",
-    "spec-to-proof"
+    "ccod-xbox-recomp"
   ],
-  "core_status": {
-    "scope": "public-core-ci",
-    "repository": "Neguchads/navi-core",
-    "commit": "640a0f6bdb079ebf13ad5dc641d55d708674abb3",
-    "run_id": 45455552256,
-    "state": "success"
-  }
+  "core_status": null
 }
