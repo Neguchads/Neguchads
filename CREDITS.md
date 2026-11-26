@@ -10,10 +10,11 @@ NAVI is an independent integration and engineering initiative maintained by Negu
 | [NAVI Graphify](https://github.com/Neguchads/navi-graphify) | [Graphify](https://github.com/Graphify-Labs/graphify) | Copyright 2026 Safi Shamsi and the Graphify contributors; Apache-2.0 with historical MIT portions; preserve LICENSE, LICENSE-MIT, NOTICE |
 | [Spec-to-Proof](https://github.com/Neguchads/spec-to-proof) | [Abyssal Garden brief](https://github.com/Noniv/abyssal-garden/blob/main/prompt.txt) | Documented methodological adaptation; Noniv; MIT upstream |
 | [NAVI Core / NEF](https://github.com/Neguchads/navi-core) | Engineering contracts and interoperability with independently maintained tools | Own MIT license does not cover third-party material; see repository policy |
-| [Nexus Engine](https://github.com/Neguchads/nexus-engine) | Standalone orchestration research; README describes architectural patterns reimplemented from an undistributed implementation | Own MIT license; confirm rights and provenance before promoting externally derived material |
+| AAF Core | Original project developed by Gustavo (Neguchads); architectural predecessor/reference for Nexus | Author-confirmed ownership; separate private source and licensing are outside this notice |
+| [Nexus Engine](https://github.com/Neguchads/nexus-engine) | Original standalone orchestration engine developed by Gustavo (Neguchads), informed by his own AAF Core | MIT for original Nexus contributions; AAF Core private source is not distributed |
 | Profile / Universe | NAVI GitHomepage, Graphify public catalog and NAVI Abyss | Integration and visual presentation; original component licenses apply to bundled copies |
 
-NAVI-specific branding, catalog integrations, orchestration and documentation are maintained by Neguchads, subject to the rights of all contributors. Project names such as Graphify, GitHub, Codex, Claude, Gemini and Copilot identify their respective products or compatibility targets, not endorsement or affiliation.
+**Copyright (c) 2026 Gustavo (Neguchads)** — original NAVI-specific contributions, including branding, catalog integrations, orchestration and documentation, to the extent of the author's rights. Original upstream copyrights and contributor rights remain intact. Each project retains its current license; NAVI Graphify contributions follow Apache-2.0, and original contributions to the MIT-licensed projects follow MIT. Project names such as Graphify, GitHub, Codex, Claude, Gemini and Copilot identify their respective products or compatibility targets, not endorsement or affiliation.
 
 ## Distribution checklist
 
