@@ -3,6 +3,10 @@
 </p>
 
 <p align="center">
+  <a href="https://recompstore.com/dev/neguchads"><img src="https://recompstore.com/assets/press/verified-dark.svg" alt="Verified developer on RecompStore" height="48"></a>
+</p>
+
+<p align="center">
   <strong>Engenharia de jogos · Inteligência artificial · Ferramentas para desenvolvedores</strong>
 </p>
 <p align="center">

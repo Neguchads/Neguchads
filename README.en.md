@@ -2,6 +2,10 @@
   <img src="assets/banner.svg" alt="Neguchads — Game engineering, AI and automation" width="100%" />
 </p>
 
+<p align="center">
+  <a href="https://recompstore.com/dev/neguchads"><img src="https://recompstore.com/assets/press/verified-dark.svg" alt="Verified developer on RecompStore" height="48"></a>
+</p>
+
 <p align="center"><strong>Game engineering · Artificial intelligence · Developer tooling</strong></p>
 <p align="center">
   <a href="#navi-os--command-center">NAVI-OS</a> · <a href="#navi-engineering-universe">Universe</a> · <a href="#featured-projects">Projects</a> · <a href="#technology">Technology</a> · <a href="#github-analytics">Analytics</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositories</a>
