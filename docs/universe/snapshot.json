@@ -2,23 +2,23 @@
   "schema_version": 1,
   "scope": "public-only",
   "owner": "Neguchads",
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "sources": {
     "navi-graphify": "f2c1848bc05d678cc29c5bc097ee96c26ee72e3f",
     "navi-githomepage": "8ec22680ecab807f8fdd7e2fe292772d89482b06",
     "navi-abyss": "86233e72d7603ae7526be9f1c9cab4e462c1dfcf",
-    "Neguchads": "d61a44959f4759904e0867925dd26ea0f42957f7"
+    "Neguchads": "9cdc470b0349d44da283454f1779a4fb05065ab2"
   },
   "totals": {
-    "public_repositories": 51,
+    "public_repositories": 201,
     "active_originals": 12,
-    "stars": 46,
+    "stars": 66,
     "forks": 4,
-    "open_items": 47,
-    "followers": 8
+    "open_items": 50,
+    "followers": 10
   },
   "languages": {
-    "Python": 5,
+    "Python": 6,
     "TypeScript": 3,
     "C++": 2
   },
@@ -40,6 +40,15 @@
       "forks": 4,
       "open_items": 47,
       "followers": 8
+    },
+    {
+      "date": "2026-11-26",
+      "public_repositories": 201,
+      "active_originals": 12,
+      "stars": 66,
+      "forks": 4,
+      "open_items": 50,
+      "followers": 10
     }
   ],
   "sectors": [
@@ -67,11 +76,11 @@
         },
         {
           "slug": "cdos-nintendods-recomp",
-          "stars": 14,
+          "stars": 33,
           "forks": 2,
-          "open_items": 8,
+          "open_items": 7,
           "language": "Python",
-          "pushed_at": "2026-11-25T13:29:02Z",
+          "pushed_at": "2026-11-26T13:39:45Z",
           "fork": false,
           "archived": false,
           "title": "Dawn of Sorrow"
@@ -89,9 +98,9 @@
         },
         {
           "slug": "csotn-saturn-recomp",
-          "stars": 5,
+          "stars": 6,
           "forks": 1,
-          "open_items": 1,
+          "open_items": 2,
           "language": "C++",
           "pushed_at": "2026-11-24T11:42:37Z",
           "fork": false,
@@ -185,9 +194,9 @@
           "slug": "spec-to-proof",
           "stars": 0,
           "forks": 0,
-          "open_items": 0,
+          "open_items": 1,
           "language": null,
-          "pushed_at": "2026-11-25T03:31:32Z",
+          "pushed_at": "2026-11-26T11:13:59Z",
           "fork": false,
           "archived": false,
           "title": "Spec-to-Proof"
@@ -207,9 +216,9 @@
           "slug": "navi-graphify",
           "stars": 0,
           "forks": 0,
-          "open_items": 0,
+          "open_items": 1,
           "language": "Python",
-          "pushed_at": "2026-11-25T13:02:48Z",
+          "pushed_at": "2026-11-26T11:13:57Z",
           "fork": true,
           "archived": false,
           "title": "NAVI Graphify"
@@ -218,9 +227,9 @@
           "slug": "Neguchads",
           "stars": 0,
           "forks": 0,
-          "open_items": 0,
+          "open_items": 2,
           "language": "Python",
-          "pushed_at": "2026-11-25T13:08:30Z",
+          "pushed_at": "2026-11-26T11:15:15Z",
           "fork": false,
           "archived": false,
           "title": "Neguchads Profile"
@@ -230,9 +239,9 @@
           "title": "NAVI Engineering Core",
           "stars": 0,
           "forks": 0,
-          "open_items": 1,
+          "open_items": 4,
           "language": "Python",
-          "pushed_at": "2026-11-25T13:05:23Z",
+          "pushed_at": "2026-11-26T12:00:20Z",
           "fork": false,
           "archived": false
         },
@@ -241,9 +250,9 @@
           "title": "NAVI GitHomepage",
           "stars": 0,
           "forks": 0,
-          "open_items": 0,
+          "open_items": 1,
           "language": "JavaScript",
-          "pushed_at": "2026-11-25T13:02:35Z",
+          "pushed_at": "2026-11-26T11:14:16Z",
           "fork": true,
           "archived": false
         },
@@ -252,9 +261,9 @@
           "title": "NAVI Abyss",
           "stars": 0,
           "forks": 0,
-          "open_items": 0,
+          "open_items": 1,
           "language": "JavaScript",
-          "pushed_at": "2026-11-25T13:02:30Z",
+          "pushed_at": "2026-11-26T11:14:10Z",
           "fork": true,
           "archived": false
         }
@@ -298,7 +307,7 @@
       "schema_version": 1,
       "scope": "public-code-only",
       "repository": "Neguchads",
-      "commit": "d61a44959f4759904e0867925dd26ea0f42957f7",
+      "commit": "9cdc470b0349d44da283454f1779a4fb05065ab2",
       "nodes": 217,
       "edges": 356,
       "communities": 11,
