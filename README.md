@@ -134,6 +134,10 @@ The NAVI Universe above provides the daily public snapshot. The card below is a 
 
 [Methodology & refresh](docs/PROFILE_ANALYTICS.md)
 
+## Open-source credits
+
+The NAVI ecosystem preserves upstream authorship and independent project licensing. [Open-source credits, provenance and distribution review](CREDITS.md).
+
 ## Engineering principles
 
 - **Reproducibility:** incremental builds, traceable dependencies and technical documentation.
