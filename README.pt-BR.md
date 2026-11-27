@@ -14,26 +14,43 @@
   <strong>Engenharia de jogos · Inteligência artificial · Ferramentas para desenvolvedores</strong>
 </p>
 <p align="center">
-  <a href="#comunidade-de-jogos">Comunidade</a> · <a href="#navi-os--command-center">NAVI-OS</a> · <a href="#navi-engineering-universe">Universe</a> · <a href="#projetos-em-destaque">Projetos</a> · <a href="#tecnologias">Tecnologias</a> · <a href="#github-analytics">Analytics</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositórios</a>
+  <a href="#por-onde-começar">Começar</a> · <a href="#comunidade-de-jogos">Comunidade</a> · <a href="#navi-os--command-center">NAVI-OS</a> · <a href="#navi-engineering-universe">Universe</a> · <a href="#projetos-em-destaque">Projetos</a> · <a href="#tecnologias">Tecnologias</a> · <a href="#github-analytics">Analytics</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositórios</a>
 </p>
 <p align="center"><a href="README.md"><img src="assets/language-en.svg" alt="Read in English" height="32" /></a></p>
 
 
 Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação estática de jogos. Meu foco é transformar problemas técnicos em soluções reproduzíveis, com documentação clara, automação e testes verificáveis.
 
+## Por onde começar
+
+| Quero... | Acesso direto |
+| :--- | :--- |
+| Jogar e acompanhar novas versões | [Releases de Dawn of Sorrow](https://github.com/Neguchads/cdos-nintendods-recomp/releases) · [Comunidade de jogos](#comunidade-de-jogos) |
+| Explorar engenharia de jogos | [CHAD Standard Recomp](https://github.com/Neguchads/chad-recomp) · [Especificação](https://github.com/Neguchads/chad-recomp/blob/main/docs/STANDARD.md) |
+| Conhecer ferramentas de engenharia e IA | [NAVI Core](https://github.com/Neguchads/navi-core) · [Projetos em destaque](#projetos-em-destaque) |
+| Colaborar ou reportar problemas | [Discord](https://discord.gg/s7CWbpZJ) · [Como contribuir](#como-contribuir) |
+
 ## Comunidade de jogos
 
 **Neguchads Gaming Community — jogos, recompilações nativas, mods e preservação de jogos.**
+
+*Preserve the past. Recompile the future.*
 
 Nosso Discord é o ponto de encontro para jogadores, desenvolvedores, autores de mods e colaboradores. Participe para acompanhar novidades e releases, discutir compatibilidade e instalação, compartilhar feedback, reportar bugs e conversar sobre desenvolvimento de jogos e engenharia reversa.
 
 **[Entrar na comunidade no Discord](https://discord.gg/s7CWbpZJ)** · [Perfil de desenvolvedor no RecompStore](https://recompstore.com/dev/neguchads)
 
+<p align="center">
+<a href="https://github.com/Neguchads/cdos-nintendods-recomp"><img src="assets/projects/cdos-nintendods-recomp.svg" width="48%" alt="Dawn of Sorrow Recompiled" /></a>
+<a href="https://github.com/Neguchads/ccod-xbox-recomp"><img src="assets/projects/ccod-xbox-recomp.svg" width="48%" alt="Curse of Darkness Recomp" /></a>
+<a href="https://github.com/Neguchads/csotn-saturn-recomp"><img src="assets/projects/csotn-saturn-recomp.svg" width="48%" alt="Symphony of the Night Recomp" /></a>
+</p>
+
 | Projeto | Plataforma | Acesso |
 | :--- | :--- | :--- |
-| Dawn of Sorrow Recompiled | Nintendo DS | [Projeto](https://github.com/Neguchads/cdos-nintendods-recomp) · [Releases](https://github.com/Neguchads/cdos-nintendods-recomp/releases) |
-| Curse of Darkness Recomp | Xbox · Experimental | [Projeto](https://github.com/Neguchads/ccod-xbox-recomp) |
-| Symphony of the Night Recomp | Sega Saturn · Experimental | [Projeto](https://github.com/Neguchads/csotn-saturn-recomp) |
+| Dawn of Sorrow Recompiled | Nintendo DS · Releases para Windows | [Projeto](https://github.com/Neguchads/cdos-nintendods-recomp) · [Releases](https://github.com/Neguchads/cdos-nintendods-recomp/releases) · [Problemas](https://github.com/Neguchads/cdos-nintendods-recomp/issues) |
+| Curse of Darkness Recomp | Xbox · Experimental | [Projeto](https://github.com/Neguchads/ccod-xbox-recomp) · [Problemas](https://github.com/Neguchads/ccod-xbox-recomp/issues) |
+| Symphony of the Night Recomp | Sega Saturn · Experimental | [Projeto](https://github.com/Neguchads/csotn-saturn-recomp) · [Problemas](https://github.com/Neguchads/csotn-saturn-recomp/issues) |
 
 Autores de mods e traduções são bem-vindos para discutir compatibilidade, créditos e permissões. Respeitamos as decisões dos criadores e os termos de cada projeto; não compartilhe ROMs comerciais, BIOS proprietárias ou conteúdo de terceiros sem autorização. Para bugs reproduzíveis, utilize as Issues do respectivo repositório.
 
@@ -80,13 +97,9 @@ Interface pública de um ecossistema independente de engenharia. NAVI-OS é a id
 <a href="https://github.com/Neguchads/chad-recomp"><img src="assets/projects/chad-recomp.svg" width="48%" alt="Chad Standard Recomp — engineering framework" /></a>
 </p>
 
-**Projeto de recompilação em destaque**
+**Recompilações de jogos:** veja os três cards e links de acesso na [comunidade de jogos](#comunidade-de-jogos).
 
-<p align="center">
-<a href="https://github.com/Neguchads/ccod-xbox-recomp"><img src="assets/projects/ccod-xbox-recomp.svg" width="48%" alt="Curse of Darkness Recomp" /></a>
-</p>
-
-<sub>Chad Standard Recomp é um framework, não um jogo. NAVI Graphify é um fork integrado. Os demais jogos continuam no catálogo completo.</sub>
+<sub>Chad Standard Recomp é um framework, não um jogo. NAVI Graphify é um fork integrado.</sub>
 
 <details>
 <summary><strong>Catálogo completo dos projetos</strong></summary>
@@ -159,6 +172,13 @@ O NAVI Universe acima fornece o snapshot público diário. O cartão abaixo é u
 <sub>Os cartões apresentam um retrato datado; veja a documentação de atualização. Estatísticas agregadas de projetos próprios ativos, públicos e privados acessíveis; forks de terceiros, arquivados e o repositório de perfil são excluídos da contagem e das linguagens. PRs e issues de minha autoria nos repositórios da conta, conforme resultados acessíveis da busca GitHub. Estrelas e forks recebidos: somente projetos públicos próprios. Nenhum nome ou link privado é publicado.</sub>
 
 [Metodologia e atualização](docs/PROFILE_ANALYTICS.md)
+
+## Como contribuir
+
+- **Jogadores:** consulte o README e os requisitos da versão. Ao reportar um bug, informe a versão, sistema operacional, GPU, passos para reproduzir e logs relevantes, sem dados pessoais.
+- **Desenvolvedores:** abra uma Issue para discutir mudanças maiores antes de enviar um pull request. Consulte o [guia de contribuição do CHAD Recomp](https://github.com/Neguchads/chad-recomp/blob/main/CONTRIBUTING.md).
+- **Autores de mods e traduções:** conversem conosco pelo Discord ou GitHub para definir permissões, créditos e limites da integração antes de qualquer inclusão. Veja os [créditos de Dawn of Sorrow](https://github.com/Neguchads/cdos-nintendods-recomp/blob/main/docs/CREDITS.md).
+- **Acompanhe o desenvolvimento:** use Watch → Releases nos repositórios de interesse para receber notificações de versões, ou entre no [Discord](https://discord.gg/s7CWbpZJ).
 
 ## Como desenvolvo
 
