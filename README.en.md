@@ -6,14 +6,34 @@
   <a href="https://recompstore.com/dev/neguchads"><img src="https://recompstore.com/assets/press/verified-dark.svg" alt="Verified developer on RecompStore" height="48"></a>
 </p>
 
+<p align="center">
+  <a href="https://discord.gg/s7CWbpZJ"><img src="https://img.shields.io/badge/Discord-Join_the_community-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Join the Neguchads gaming community on Discord" height="36" /></a>
+</p>
+
 <p align="center"><strong>Game engineering · Artificial intelligence · Developer tooling</strong></p>
 <p align="center">
-  <a href="#navi-os--command-center">NAVI-OS</a> · <a href="#navi-engineering-universe">Universe</a> · <a href="#featured-projects">Projects</a> · <a href="#technology">Technology</a> · <a href="#github-analytics">Analytics</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositories</a>
+  <a href="#gaming-community">Community</a> · <a href="#navi-os--command-center">NAVI-OS</a> · <a href="#navi-engineering-universe">Universe</a> · <a href="#featured-projects">Projects</a> · <a href="#technology">Technology</a> · <a href="#github-analytics">Analytics</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositories</a>
 </p>
 <p align="center"><a href="README.pt-BR.md"><img src="assets/language-pt.svg" alt="Leia em português brasileiro" height="32" /></a></p>
 
 
 I develop tools, applications and experimental static game recompilation projects. My focus is on turning technical problems into reproducible solutions through clear documentation, automation and verifiable tests.
+
+## Gaming community
+
+**Neguchads Gaming Community — games, native recompilation, mods and game preservation.**
+
+Our Discord is a meeting place for players, developers, mod creators and contributors. Join to follow development news and releases, discuss installation and compatibility, share feedback, report bugs, and talk about game development and reverse engineering.
+
+**[Join our Discord community](https://discord.gg/s7CWbpZJ)** · [RecompStore developer profile](https://recompstore.com/dev/neguchads)
+
+| Project | Platform | Explore |
+| :--- | :--- | :--- |
+| Dawn of Sorrow Recompiled | Nintendo DS | [Project](https://github.com/Neguchads/cdos-nintendods-recomp) · [Releases](https://github.com/Neguchads/cdos-nintendods-recomp/releases) |
+| Curse of Darkness Recomp | Xbox · Experimental | [Project](https://github.com/Neguchads/ccod-xbox-recomp) |
+| Symphony of the Night Recomp | Sega Saturn · Experimental | [Project](https://github.com/Neguchads/csotn-saturn-recomp) |
+
+Mod and translation creators are welcome to discuss compatibility, attribution and permissions. We respect creators' decisions and project-specific terms; please do not share commercial ROMs, proprietary BIOS files or unauthorized third-party content. For reproducible bugs, use the relevant repository's Issues.
 
 ## NAVI-OS / Command Center
 
@@ -151,5 +171,5 @@ Game ports are experimental and require your own compatible game copy. Consult e
 
 <p align="center">
   <strong>Explore. Build. Verify.</strong><br />
-  <a href="https://github.com/Neguchads?tab=repositories">All public repositories</a>
+  <a href="https://github.com/Neguchads?tab=repositories">All public repositories</a> · <a href="https://discord.gg/s7CWbpZJ">Discord</a>
 </p>

@@ -7,15 +7,35 @@
 </p>
 
 <p align="center">
+  <a href="https://discord.gg/s7CWbpZJ"><img src="https://img.shields.io/badge/Discord-Entrar_na_comunidade-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Entrar na comunidade Neguchads no Discord" height="36" /></a>
+</p>
+
+<p align="center">
   <strong>Engenharia de jogos · Inteligência artificial · Ferramentas para desenvolvedores</strong>
 </p>
 <p align="center">
-  <a href="#navi-os--command-center">NAVI-OS</a> · <a href="#navi-engineering-universe">Universe</a> · <a href="#projetos-em-destaque">Projetos</a> · <a href="#tecnologias">Tecnologias</a> · <a href="#github-analytics">Analytics</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositórios</a>
+  <a href="#comunidade-de-jogos">Comunidade</a> · <a href="#navi-os--command-center">NAVI-OS</a> · <a href="#navi-engineering-universe">Universe</a> · <a href="#projetos-em-destaque">Projetos</a> · <a href="#tecnologias">Tecnologias</a> · <a href="#github-analytics">Analytics</a> · <a href="https://github.com/Neguchads?tab=repositories">Repositórios</a>
 </p>
 <p align="center"><a href="README.md"><img src="assets/language-en.svg" alt="Read in English" height="32" /></a></p>
 
 
 Desenvolvo ferramentas, aplicações e projetos experimentais de recompilação estática de jogos. Meu foco é transformar problemas técnicos em soluções reproduzíveis, com documentação clara, automação e testes verificáveis.
+
+## Comunidade de jogos
+
+**Neguchads Gaming Community — jogos, recompilações nativas, mods e preservação de jogos.**
+
+Nosso Discord é o ponto de encontro para jogadores, desenvolvedores, autores de mods e colaboradores. Participe para acompanhar novidades e releases, discutir compatibilidade e instalação, compartilhar feedback, reportar bugs e conversar sobre desenvolvimento de jogos e engenharia reversa.
+
+**[Entrar na comunidade no Discord](https://discord.gg/s7CWbpZJ)** · [Perfil de desenvolvedor no RecompStore](https://recompstore.com/dev/neguchads)
+
+| Projeto | Plataforma | Acesso |
+| :--- | :--- | :--- |
+| Dawn of Sorrow Recompiled | Nintendo DS | [Projeto](https://github.com/Neguchads/cdos-nintendods-recomp) · [Releases](https://github.com/Neguchads/cdos-nintendods-recomp/releases) |
+| Curse of Darkness Recomp | Xbox · Experimental | [Projeto](https://github.com/Neguchads/ccod-xbox-recomp) |
+| Symphony of the Night Recomp | Sega Saturn · Experimental | [Projeto](https://github.com/Neguchads/csotn-saturn-recomp) |
+
+Autores de mods e traduções são bem-vindos para discutir compatibilidade, créditos e permissões. Respeitamos as decisões dos criadores e os termos de cada projeto; não compartilhe ROMs comerciais, BIOS proprietárias ou conteúdo de terceiros sem autorização. Para bugs reproduzíveis, utilize as Issues do respectivo repositório.
 
 ## NAVI-OS / Command Center
 
@@ -153,5 +173,5 @@ Os ports de jogos são experimentais e exigem a própria cópia compatível do j
 
 <p align="center">
   <strong>Explore. Build. Verify.</strong><br />
-  <a href="https://github.com/Neguchads?tab=repositories">Todos os repositórios públicos</a>
+  <a href="https://github.com/Neguchads?tab=repositories">Todos os repositórios públicos</a> · <a href="https://discord.gg/s7CWbpZJ">Discord</a>
 </p>
